@@ -12,7 +12,7 @@
 ![Количество закрытых issues](https://img.shields.io/github/issues-closed-raw/rx1310/rx1310.github.io?color=354a6d)](https://github.com/rx1310/rx1310.github.io/issues)
 [![Количество открытых PR](https://img.shields.io/github/issues-pr-raw/rx1310/rx1310.github.io?label=open%20PR%27s)
 ![Количество закрытых PR](https://img.shields.io/github/issues-pr-closed-raw/rx1310/rx1310.github.io?label=closed%20PR%27s)](https://github.com/rx1310/rx1310.github.io/pulls)
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=tutlinux.tutlinux)
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=rx1310.rx1310.github.io)
 ![Лицензия](https://img.shields.io/github/license/rx1310/rx1310.github.io?label=license)
 
 ## 📦 Сборка
