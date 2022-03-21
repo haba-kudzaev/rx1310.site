@@ -1,0 +1,7 @@
+contact_links:
+  - name: Канал в Telegram
+    url: https://t.me/rx1310_dev
+    about: Новости, информация и чат со мной.
+  - name: Live-канал в Telegram
+    url: https://t.me/rx1310_live
+    about: Новости, информация и чат со мной, но в более открытой что-ли форме...
