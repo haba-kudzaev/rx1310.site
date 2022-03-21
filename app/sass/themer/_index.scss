@@ -1,0 +1,19 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/22 00:50:34
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+@import 'themes';
+
+@if $themes != null {
+	@each $theme-name, $map in $themes {
+		:root[class="theme-#{$theme-name}"] {
+			color-scheme: #{$theme-name};
+			@each $key, $value in $map {
+				--#{$key}: #{$value};
+			}
+		}
+	}
+}

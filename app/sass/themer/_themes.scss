@@ -1,0 +1,26 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/22 00:50:21
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+// ? clr - цвет
+// ? sdw - тень
+$themes: (
+
+	// * Светлая тема
+	light: (
+		clrAccent: #baddf4,
+		clrBackground: #f8f8f8,
+		clrFont: #000
+	),
+
+	// * Темная тема
+	dark: (
+		clrAccent: #ffffff,
+		clrBackground: #000,
+		clrFont: #fff
+	),
+
+);

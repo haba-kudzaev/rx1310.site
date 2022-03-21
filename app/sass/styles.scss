@@ -1,6 +1,6 @@
 @use 'sass:math'; // Модули из пакета SASS
 @use 'sass:map';  // Модули из пакета SASS
-@use 'variables' as *; // Gthtvtyyst
+@use 'variables' as *; // Переменные
 @use '../../node_modules/@rx1310/kalium19' as k19 with (
 
 	// настройка миксина border-radius();
@@ -24,4 +24,5 @@
 );
 
 // ? Импорты
+@import 'themer';
 @import 'base';
