@@ -1,4 +1,4 @@
-<img title="Логотип проекта" src="https://avatars.githubusercontent.com/u/33829769?v=4" alt="Logo" width="100px" align="right" /> [rx1310.github.io](https://rx1310.github.io) ![](https://img.shields.io/github/package-json/version/rx1310/rx1310.github.io?label=%20)
+<img title="Логотип проекта" src="https://avatars.githubusercontent.com/u/33829769?v=4" alt="Logo" width="100px" align="right" /> [rx1310.github.io](https://rx1310.github.io)
 ======
 Репозиторий с исходным кодом персонального сайта Асхаба Кудзаева (rx1310).
 

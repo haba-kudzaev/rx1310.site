@@ -1,5 +1,4 @@
 {
-	"version": "2022.03.21",
 	"scripts": {
 		"start": "npx 11ty:serve",
 		"build": "npm-run-all sass:compile 11ty:build",
