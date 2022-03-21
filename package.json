@@ -5,7 +5,7 @@
 		"11ty:build": "npx @11ty/eleventy --config=.configs/.11ty.js",
 		"11ty:serve": "npx @11ty/eleventy --serve --config=.configs/.11ty.js",
 		"sass:compile": "sass --no-source-map app/sass/:dist/css/ --style compressed",
-		"sass:watch": "sass --no-source-map app/sass/:dist/css/ --watch",
+		"sass:watch": "sass --no-source-map app/sass/:dist/css/ --watch"
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^1.0.0",
