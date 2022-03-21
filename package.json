@@ -1,0 +1,24 @@
+{
+	"version": "2022.03.21",
+	"scripts": {
+		"start": "npx 11ty:serve",
+		"build": "npm-run-all sass:compile 11ty:build",
+		"11ty:build": "npx @11ty/eleventy --config=.configs/.11ty.js",
+		"11ty:serve": "npx @11ty/eleventy --serve --config=.configs/.11ty.js",
+		"sass:compile": "sass --no-source-map app/sass/:dist/css/ --style compressed",
+		"sass:watch": "sass --no-source-map app/sass/:dist/css/ --watch",
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.0",
+		"@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+		"@rx1310/grid-v4": "^4.4.2",
+		"@rx1310/kalium19": "^22.1.0",
+		"markdown-it": "^12.3.2",
+		"markdown-it-attrs": "^4.1.3",
+		"npm-run-all": "^4.1.5",
+		"nunjucks": "^3.2.3",
+		"prismjs": "^1.27.0",
+		"sanitize.css": "^13.0.0",
+		"sass": "^1.49.9"
+	}
+}
