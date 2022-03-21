@@ -1,0 +1,85 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/21 23:18:48
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+:root {
+
+	color-scheme: dark light;
+
+	// ? Генерация кастомных свойств
+	@include k19.props($theme, false);  // цвета
+
+}
+
+@-ms-viewport { width: device-width; }
+@-o-viewport	{ width: device-width; }
+@viewport		  { width: device-width; }
+
+*,
+*::before,
+*::after {
+	-webkit-touch-callout: none; // https://clck.ru/9HHvq
+}
+
+body {
+
+	font: {
+		size: $font-size;
+		family: 'Open Sans', sans-serif;
+	};
+
+	margin: 0;
+	scroll-behavior: smooth;
+	background-color: var(--colorBackground);
+	color: var(--colorFont);
+
+	-webkit-font-smoothing: antialiased;
+
+	@include k19.prefixer-legacy(
+		user-select,
+		none
+	);
+
+	@include k19.prefixer(
+		text-size-adjust,
+		100%,
+		webkit
+	); // https://clck.ru/NNamf
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+}
+
+h1 { font-size: $font-size_h1; }
+h2 { font-size: $font-size_h2; }
+h3 { font-size: $font-size_h3; }
+h4 { font-size: $font-size_h4; }
+h5 { font-size: $font-size_h5; }
+h6 { font-size: $font-size_h6; }
+
+img {
+	border-style: none;
+  overflow: none;
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+[hidden] {
+	@include k19.visually-hidden();
+}
+
+[disabled]:not([disabled="false"]) {
+
+	pointer-events: none;
+	cursor: not-allowed;
+
+	@include k19.opacity(0.50);
+
+}
