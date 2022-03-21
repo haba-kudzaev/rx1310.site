@@ -1,7 +1,7 @@
 {
 	"scripts": {
-		"start": "npx 11ty:serve",
-		"build": "npm-run-all sass:compile 11ty:build",
+		"start": "run-p 11ty:serve sass:watch",
+		"build": "run-s sass:compile 11ty:build",
 		"11ty:build": "npx @11ty/eleventy --config=.configs/.11ty.js",
 		"11ty:serve": "npx @11ty/eleventy --serve --config=.configs/.11ty.js",
 		"sass:compile": "sass --no-source-map app/sass/:dist/css/ --style compressed",
