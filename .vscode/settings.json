@@ -3,16 +3,17 @@
 	"git.ignoreLimitWarning": true,
 	"npm-scripts.showStartNotification": false,
 
-	// "files.exclude": {
-	// 	"dist/": false,
-	// 	".github/": true,
-	// 	"node_modules": true,
-	// 	".ecrc": true,
-	// 	".editorconfig": true,
-	// 	".eleventyignore": true,
-	// 	"package-lock.*": true,
-	// 	".gitignore": true
-	// },
+	"files.exclude": {
+		"dist/": false,
+		".github/": true,
+		"node_modules": true,
+		".ecrc": true,
+		".editorconfig": true,
+		".eleventyignore": true,
+		"package-lock.*": true,
+		".gitignore": true,
+		"LICENSE": true
+	},
 
 	// * Better Comments
 	"better-comments.tags": [
