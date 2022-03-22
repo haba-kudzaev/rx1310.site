@@ -11,15 +11,13 @@
 
 	width: $size;
 	height: $size;
-
 	vertical-align: middle;
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
 	border: none;
 	cursor: pointer;
-
-	color: var(--colorFont);
+	color: var(--clrFont);
 	background: transparent;
 
 	// Flexbox
@@ -27,7 +25,7 @@
 	@include k19.justify-content(center);
 	@include k19.align-items(center);
 
-	@include k19.border-radius(50%);
+	@include k19.border-radius(100%);
 	@include k19.transition(
 		color .3s,
 		background .3s,
@@ -53,13 +51,8 @@
 		color: var(--nav-action_clrIcon--active);
 	}
 
-	&:first-child {
-		margin-left: -9px;
-	}
-
-	&:last-child {
-		margin-right: -7px;
-	}
+	&:first-child { margin-left: -9px; }
+	&:last-child { margin-right: -7px; }
 
 	// * Деактивированное состояние кнопки
 	@include k19.m(disabled) {

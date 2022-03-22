@@ -31,9 +31,18 @@ $themes: (
 
 	// * Темная тема
 	dark: (
-		clrAccent: #ffffff,
+
+		clrAccent: #3e7fab,
 		clrBackground: #000,
-		clrFont: #fff
+		clrFont: #fff,
+
+		// Nav
+		nav_clrBackground--scrolled: #000000,
+		nav_clrBorder: #80808073,
+		nav-action_clrBacground--hover: #baddf467,
+		nav-action_clrBacground--active: #baddf4,
+		nav-action_clrIcon--active: #000000,
+		
 	),
 
 );

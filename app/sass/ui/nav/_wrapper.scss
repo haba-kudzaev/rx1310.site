@@ -15,14 +15,23 @@
 
 	@include k19.transition(
 		box-shadow .3s,
-		background-color .3s
+		background-color .3s,
+		border-bottom .4s
 	); // переходы
 
 	// @mod: Состояние Nav при скролле
 	@include k19.m(scrolled) {
-	background-color: var(--nav_clrBackground--scrolled);
+
+		background-color: var(--nav_clrBackground--scrolled);
 
 		@include k19.box-shadow(var(--nav_sdw));
+
+		// Dark Theme
+		.theme-dark & {
+			border-bottom: 1px solid var(--nav_clrBorder);
+			@include k19.box-shadow(none);
+		}
+
 	}
 
 }
