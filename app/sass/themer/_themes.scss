@@ -11,9 +11,22 @@ $themes: (
 
 	// * Светлая тема
 	light: (
+
 		clrAccent: #baddf4,
 		clrBackground: #f8f8f8,
-		clrFont: #000
+		clrFont: #000,
+
+		// Nav
+		nav_clrBackground: #fff,
+		nav_clrBackground--scrolled: #baddf4,
+		nav-action_clrBacground--hover: #97c7e7,
+		nav-action_clrBacground--active: #3e7fab,
+		nav-action_clrIcon--active: #ffffff,
+		nav_sdw: (
+			rgba(60, 64, 67, 0.178) 0px 1px 2px 0px, 
+			rgba(60, 64, 67, 0.068) 0px 2px 6px 2px
+		)
+
 	),
 
 	// * Темная тема

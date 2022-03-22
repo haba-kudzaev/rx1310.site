@@ -1,0 +1,35 @@
+<nav class="nav_wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="nav">
+					
+					{# Кнопка "Back" #}
+					{% if nav.showBackAction != false %}
+						<button
+							title="Перейти на пред. стр."
+							onclick="history.back()"
+							class="nav_action material-icons">
+							navigate_before
+						</button>
+					{% endif %}
+
+					{# Заголовок страницы #}
+					<h5 class="nav_title hidden">{{ title }}</h5>
+
+					{# Кнопка "Scroll to top" #}
+					{% if nav.showScrollUpAction != false %}
+						<button
+							title="Перейти к началу стр."
+							onclick="s2t()"
+							id="s2t"
+							class="nav_action nav_action--disabled material-icons">
+							keyboard_double_arrow_up
+						</button>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

@@ -1,6 +1,11 @@
 {
 
 	"title": "Главная",
-	"description": "Молодой и начинающий разработчик из России, интересующийся веб-разработкой (front-end), разработкой Android-приложений и Linux."
+	"description": "Молодой и начинающий разработчик из России, интересующийся веб-разработкой (front-end), разработкой Android-приложений и Linux.",
+
+	"nav": {
+		"showBackAction": true,
+		"showScrollUpAction": true
+	}
 
 }
