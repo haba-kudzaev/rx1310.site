@@ -24,22 +24,31 @@
 		"body": ["var(--$1)"]
 	},
 
-	"k19: Block Comment [SASS]": {
+	"k19: Block [SASS]": {
 		"scope": "scss",
-		"prefix": "block-comment",
-		"body": ["// @block: "]
+		"prefix": "block",
+		"body": [
+			"// @block $1",
+			"@include k19.b($2) {$3}"
+		]
 	},
 
-	"k19: Element Comment [SASS]": {
+	"k19: Element [SASS]": {
 		"scope": "scss",
-		"prefix": "el-comment",
-		"body": ["// @element: "]
+		"prefix": "element",
+		"body": [
+			"// @element $1",
+			"@include k19.e($2) {$3}"
+		]
 	},
 
-	"k19: Modificator Comment [SASS]": {
+	"k19: Modificator [SASS]": {
 		"scope": "scss",
-		"prefix": "mod-comment",
-		"body": ["// @mod: "]
+		"prefix": "mod",
+		"body": [
+			"// @mod $1",
+			"@include k19.m($2) {$3}"
+		]
 	},
 
 	"File info": {
