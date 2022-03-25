@@ -3,7 +3,7 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="nav">
-					
+
 					{# Кнопка "Back" #}
 					{% if nav.showBackAction != false %}
 						<button
@@ -15,7 +15,7 @@
 					{% endif %}
 
 					{# Заголовок страницы #}
-					<h5 class="nav_title hidden">{{ title }}</h5>
+					<h5 class="nav_title hidden">{{ page.title }}</h5>
 
 					{# Кнопка "Scroll to top" #}
 					{% if nav.showScrollUpAction != false %}
