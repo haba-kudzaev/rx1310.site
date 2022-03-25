@@ -4,6 +4,11 @@
 			<div class="col-12">
 				<div class="header">
 					<h1>Lorem</h1>
+					<ul>
+						{% for a, b in social %}
+						<li>{{ a }} {{ b.url }}</li>
+						{% endfor %}
+					</ul>
 				</div>
 			</div>
 		</div>

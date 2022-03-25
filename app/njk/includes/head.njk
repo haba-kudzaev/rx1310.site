@@ -3,21 +3,21 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 {# Короткое описание страницы (ограничение — 150 символов) #}
-<meta name="description" content="{{ description }}">
+<meta name="description" content="{{ page.desc }}">
 
 {# Facebook Meta Tags #}
 <meta property="og:url" content="https://rx1310.github.io/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Асхаб Кудзаев">
-<meta property="og:description" content="{{ description }}">
+<meta property="og:title" content="{{ page.appName }}">
+<meta property="og:description" content="{{ page.desc }}">
 <meta property="og:image" content="/assets/images/og.jpg">
 
 {# Twitter Meta Tags #}
 <meta name="twitter:card" content="summary_large_image">
 <meta property="twitter:domain" content="">
 <meta property="twitter:url" content="https://rx1310.github.io/">
-<meta name="twitter:title" content="Асхаб Кудзаев">
-<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:title" content="{{ page.appName }}">
+<meta name="twitter:description" content="{{ page.desc }}">
 <meta name="twitter:image" content="/assets/images/og.jpg">
 
 {# Контролирует поведение поисковых систем при индексации страницы #}
@@ -30,13 +30,13 @@
 <meta name="mobile-web-app-capable" content="yes">
 
 {# Theme Color for Chrome, Firefox OS and Opera #}
-<meta name="theme-color" content="#baddf4">
-<meta name="msapplication-TileColor" content="##baddf4">
-<meta name="apple-mobile-web-app-status-bar-style" content="##baddf4">
+<meta name="theme-color" content="{{ page.themeColor if page.themeColor else '#baddf4' }}">
+<meta name="msapplication-TileColor" content="{{ page.themeColor if page.themeColor else "#baddf4" }}">
+<meta name="apple-mobile-web-app-status-bar-style" content="{{ page.themeColor if page.themeColor else "#baddf4" }}">
 <meta name="color-scheme" content="dark light">
 
-<meta name="application-name" content="Асхаб Кудзаев">
-<meta name="apple-mobile-web-app-title" content="Асхаб Кудзаев">
+<meta name="application-name" content="{{ page.appName }}">
+<meta name="apple-mobile-web-app-title" content="{{ page.appName }}">
 
 {# <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml"> #}
 
@@ -56,4 +56,4 @@
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 
-<title>{{ title }} / rx1310</title>
+<title>{{ page.title }} / rx1310</title>

@@ -1,0 +1,46 @@
+# url   : ссылка на ресурс (указывается без www и https://)
+# title : название ресурса, которое также добавляется в аттрибут title
+# avatar: аватарка на ресурсе
+# icon  : иконка ресурса
+
+# ? Мой GitHub
+github:
+  url: "github.com/rx1310"
+  title: "GitHub"
+  avatar: null
+  icon: ""
+
+# ? Написать мне в Telegram
+telegram:
+  url: "t.me/rx1310"
+  title: "Telegram"
+  avatar: null
+  icon: ""
+
+# ? Мой Twitter
+twitter:
+  url: "twitter.com/rx1310"
+  title: "Twitter"
+  avatar: null
+  icon: ""
+
+# ? Мой аккаунт на VK
+vk:
+  url: "vk.com/rx1310"
+  title: "VK"
+  avatar: null
+  icon: ""
+
+# ? Мой блог на Teletype
+teletype:
+  url: "teletype.in/@rx1310_blog"
+  title: "VK"
+  avatar: null
+  icon: ""
+
+# ? Аккаунт на Habr
+habr:
+  url: "habr.com/ru/users/rx1310/"
+  title: "VK"
+  avatar: null
+  icon: ""

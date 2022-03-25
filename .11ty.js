@@ -1,9 +1,12 @@
 const prism   = require("@11ty/eleventy-plugin-syntaxhighlight");
 const mdIt    = require('markdown-it');
 const mdAttrs = require('markdown-it-attrs');
+const yaml    = require("js-yaml");
 
 module.exports = function(cnf) {
 
+	cnf.addDataExtension("yaml", contents => yaml.load(contents));
+	cnf.addDataExtension('yml', contents => yaml.load(contents));
 	cnf.addPassthroughCopy('app/assets');
 	cnf.addPassthroughCopy('app/js');
 	cnf.setUseGitIgnore(true);
@@ -76,13 +79,11 @@ module.exports = function(cnf) {
 	return {
 
 		dir: {
-
 			input: 'app',
 			output: 'dist',
 			includes: 'njk/includes/',
 			layouts: 'njk/layouts/',
 			data: "data"
-
 		},
 
 		templateFormats: ['md', 'njk'],
