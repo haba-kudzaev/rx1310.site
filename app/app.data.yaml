@@ -11,7 +11,12 @@ nav:
   showScrollUpAction: true # если "true", то кнопка Scroll Up отобразится
 
 # ? Заголовок страницы (Header)
-header: null
+header:
+  title: "Заголовок" # заголовок h1
+  subtitle: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum." # описание страницы (может отличаться от page.desc)
+  image: # изображение в header
+    url: "assets/images/avatar.svg" # ссылка на изображение
+    alt: "Тестовое изображение" # описание изображения (alt, title, aria-label)
 
 # ? Подвал страницы (Footer)
 footer: null

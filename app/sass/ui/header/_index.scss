@@ -6,3 +6,17 @@
 /// @link     https://github.com/rx1310
 
 @import 'wrapper';
+
+.header {
+
+	// @element: Header Title
+	@include k19.e(title) {
+		margin-top: .8em;
+	}
+
+	// @element: Header Subtitle
+	@include k19.e(subtitle) {}
+
+	@import 'image';
+
+}

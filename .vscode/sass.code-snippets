@@ -28,7 +28,7 @@
 		"scope": "scss",
 		"prefix": "block",
 		"body": [
-			"// @block $1",
+			"// @block: $1",
 			"@include k19.b($2) {$3}"
 		]
 	},
@@ -37,7 +37,7 @@
 		"scope": "scss",
 		"prefix": "element",
 		"body": [
-			"// @element $1",
+			"// @element: $1",
 			"@include k19.e($2) {$3}"
 		]
 	},
@@ -46,7 +46,7 @@
 		"scope": "scss",
 		"prefix": "mod",
 		"body": [
-			"// @mod $1",
+			"// @mod: $1",
 			"@include k19.m($2) {$3}"
 		]
 	},

@@ -8,6 +8,7 @@
 					{% if nav.showBackAction != false %}
 						<button
 							title="Перейти на пред. стр."
+							aria-label="Назад"
 							onclick="history.back()"
 							class="nav_action material-icons">
 							navigate_before
@@ -21,6 +22,7 @@
 					{% if nav.showScrollUpAction != false %}
 						<button
 							title="Перейти к началу стр."
+							aria-label="К началу страницы"
 							onclick="s2t()"
 							id="s2t"
 							class="nav_action nav_action--disabled material-icons">

@@ -3,12 +3,19 @@
 		<div class="row">
 			<div class="col-12">
 				<div class="header">
-					<h1>Lorem</h1>
-					<ul>
-						{% for a, b in social %}
-						<li>{{ a }} {{ b.url }}</li>
-						{% endfor %}
-					</ul>
+
+					{% if header.image != null %}
+						<img
+							src="{{ header.image.url }}"
+							alt="{{ header.image.alt }}"
+							aria-label="{{ header.image.alt }}"
+							title="{{ header.image.alt }}"
+							class="header_image">
+					{% endif %}
+
+					<h1 class="header_title">{{ header.title }}</h1>
+					<p class="header_subtitle">{{ header.subtitle }}</p>
+
 				</div>
 			</div>
 		</div>

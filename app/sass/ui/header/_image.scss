@@ -1,0 +1,41 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/26 02:46:13
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+// @element: Header Image
+@include k19.e(image) {
+
+	$size: 100px;
+	$borderRadius: 100%;
+
+	width: $size;
+	height: $size;
+	float: right;
+	margin: 0 0 1em 1em;
+
+	@include k19.border-radius($borderRadius);
+	@include k19.transition(
+		transform .3s,
+		box-shadow .3s
+	);
+
+	&:active {
+
+		// Box Shadow
+		@include k19.box-shadow(
+			rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+			rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+		);
+
+		// Transform
+		@include k19.prefixer(
+			transform,
+			translateY(-3px),
+			ms webkit o moz
+		);
+	}
+
+}
