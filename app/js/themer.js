@@ -50,7 +50,6 @@ function setColorTheme(value) {
 	let msTitleColor = document.querySelector('meta[name="msapplication-TileColor"]');
 	let appleStatusBarStyle = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
 
-
 	themeColor.setAttribute('content', value);
 	appleStatusBarStyle.setAttribute('content', value);
 	msTitleColor.setAttribute('content', value);

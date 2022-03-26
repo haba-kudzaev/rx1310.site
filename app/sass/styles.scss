@@ -4,7 +4,7 @@
 @use '../../node_modules/@rx1310/kalium19' as k19 with (
 
 	// настройка миксина border-radius();
-	$border-radius: 6px,
+	$border-radius: 12px,
 
 	// настрока миксинов BEM
 	$bem: (
@@ -29,4 +29,4 @@
 @import 'ui/nav';
 @import 'ui/header';
 @import 'ui/footer';
-@import 'ui/card';
+@import 'ui/alert';

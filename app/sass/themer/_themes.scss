@@ -32,7 +32,13 @@ $themes: (
 
 		// Footer
 		footer_clrBackground: black,
-		footer_clrFont: white
+		footer_clrFont: white,
+
+		// Alert
+		alert_clrBackground: white,
+		alert-clickable_clrBacground--hover: #c0c3c7,
+		alert-clickable_clrBacground--active: var(--clrAccent),
+		alert_sdw: (rgba(0, 0, 0, 0.1) 0px 4px 12px),
 
 	),
 
@@ -54,7 +60,13 @@ $themes: (
 		header_clrBackground: var(--nav_clrBackground),
 
 		// Footer
-		footer_clrBackground: var(--header_clrBackground)
+		footer_clrBackground: var(--header_clrBackground),
+
+		// Alert
+		alert_clrBackground: #161b22,
+		alert-clickable_clrBacground--hover: #2d333b,
+		alert-clickable_clrBacground--active: var(--clrAccent),
+		alert_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px)
 	),
 
 );
