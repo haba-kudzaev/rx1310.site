@@ -14,6 +14,7 @@
 	// @element: Header Title
 	@include k19.e(title) {
 		margin-top: .8em;
+		font-size: $font-size_h3;
 	}
 
 	// @element: Header Subtitle
