@@ -12,15 +12,15 @@ $themes: (
 	// * Светлая тема
 	light: (
 
-		clrAccent: #baddf4,
-		clrBackground: #f8f8f8,
+		clrAccent: #006ad8,
+		clrBackground: #fff,
 		clrFont: #000,
 
 		// Nav
-		nav_clrBackground: #fff,
-		nav_clrBackground--scrolled: #baddf4,
-		nav-action_clrBacground--hover: #97c7e7,
-		nav-action_clrBacground--active: #3e7fab,
+		nav_clrBackground: #f6f8fa,
+		nav_clrBackground--scrolled: #e8ebef,
+		nav-action_clrBacground--hover: #c0c3c7,
+		nav-action_clrBacground--active: var(--clrAccent),
 		nav-action_clrIcon--active: #ffffff,
 		nav_sdw: (
 			rgba(60, 64, 67, 0.178) 0px 1px 2px 0px,
@@ -28,24 +28,33 @@ $themes: (
 		),
 
 		// Header
-		header_clrBackground: #fff
+		header_clrBackground: var(--nav_clrBackground),
+
+		// Footer
+		footer_clrBackground: black,
+		footer_clrFont: white
 
 	),
 
 	// * Темная тема
 	dark: (
 
-		clrAccent: #3e7fab,
-		clrBackground: #000,
+		clrAccent: #0071e9,
+		clrBackground: #0a0c10,
 		clrFont: #fff,
 
 		// Nav
-		nav_clrBackground--scrolled: #000000,
-		nav_clrBorder: #80808073,
-		nav-action_clrBacground--hover: #baddf467,
-		nav-action_clrBacground--active: #baddf4,
+		nav_clrBackground: #0d1117,
+		nav_clrBackground--scrolled: #161b22,
+		nav-action_clrBacground--hover: #2d333b,
+		nav-action_clrBacground--active: var(--clrAccent),
 		nav-action_clrIcon--active: #000000,
 
+		// Header
+		header_clrBackground: var(--nav_clrBackground),
+
+		// Footer
+		footer_clrBackground: var(--header_clrBackground)
 	),
 
 );

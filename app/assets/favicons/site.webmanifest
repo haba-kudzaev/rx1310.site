@@ -13,24 +13,8 @@
 					"type": "image/png"
 			}
 	],
-	"theme_color": "#baddf4",
-	"background_color": "#baddf4",
+	"theme_color": "#e8ebef",
+	"background_color": "#e8ebef",
 	"display": "standalone",
-	"start_url": "/",
-	"shortcuts": [
-    {
-      "name": "How's weather today?",
-      "short_name": "Today",
-      "description": "View weather information for today",
-      "url": "/today?source=pwa",
-      "icons": [{ "src": "/assets/favicons/android-chrome-192x192.png", "sizes": "192x192" }]
-    },
-    {
-      "name": "How's weather tomorrow?",
-      "short_name": "Tomorrow",
-      "description": "View weather information for tomorrow",
-      "url": "/tomorrow?source=pwa",
-      "icons": [{ "src": "/assets/favicons/android-chrome-192x192.png", "sizes": "192x192" }]
-    }
-  ]
+	"start_url": "/"
 }

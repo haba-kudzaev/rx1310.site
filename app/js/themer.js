@@ -7,8 +7,8 @@ const themes = {
 };
 
 const colors = {
-	light: "#baddf4",
-	dark: "#000000"
+	light: "#e8ebef",
+	dark: "#161b22"
 };
 
 /* themerSet()
@@ -50,7 +50,7 @@ function setColorTheme(value) {
 	let msTitleColor = document.querySelector('meta[name="msapplication-TileColor"]');
 	let appleStatusBarStyle = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
 
-	
+
 	themeColor.setAttribute('content', value);
 	appleStatusBarStyle.setAttribute('content', value);
 	msTitleColor.setAttribute('content', value);

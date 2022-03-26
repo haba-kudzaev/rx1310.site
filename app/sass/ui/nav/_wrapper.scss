@@ -28,7 +28,6 @@
 
 		// Dark Theme
 		.theme-dark & {
-			border-bottom: 1px solid var(--nav_clrBorder);
 			@include k19.box-shadow(none);
 		}
 
