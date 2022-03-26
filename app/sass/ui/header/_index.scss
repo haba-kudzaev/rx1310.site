@@ -9,6 +9,8 @@
 
 .header {
 
+	padding-bottom: 1em;
+
 	// @element: Header Title
 	@include k19.e(title) {
 		margin-top: .8em;
