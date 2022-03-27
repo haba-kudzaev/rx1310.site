@@ -13,9 +13,10 @@
 							href="{{ data.url }}"
 							title="Нажмите, чтобы перейти в {{ data.title }} →"
 							aria-label="Перейти в {{ data.title }}">
-							<svg>
+							<svg class="footer-links_link_icon">
 								<use xlink:href="assets/images/icons.svg#{{ id }}"></use>
 							</svg>
+							<span class="footer-links_link_name">{{ data.title }}</span>
 						</a>
 					{% endfor %}
 				</div>
