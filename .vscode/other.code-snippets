@@ -1,0 +1,11 @@
+{
+	"Symbol [SVG]": {
+		"prefix": "symbol",
+		"body": [
+			"<!-- ! $1 /  -->",
+			"<symbol id=\"\" viewBox=\"0 0 24 24\">",
+			"  <path fill=\"var(--iconColor, currentColor)\" d=\"$4\"/>",
+			"</symbol>"
+		]
+	},
+}

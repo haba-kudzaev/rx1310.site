@@ -19,8 +19,8 @@ $themes: (
 		// Nav
 		nav_clrBackground: #f6f8fa,
 		nav_clrBackground--scrolled: #e8ebef,
-		nav-action_clrBacground--hover: #c0c3c7,
-		nav-action_clrBacground--active: var(--clrAccent),
+		nav-action_clrBackground--hover: #c0c3c7,
+		nav-action_clrBackground--active: var(--clrAccent),
 		nav-action_clrIcon--active: #ffffff,
 		nav_sdw: (
 			rgba(60, 64, 67, 0.178) 0px 1px 2px 0px,
@@ -31,13 +31,13 @@ $themes: (
 		header_clrBackground: var(--nav_clrBackground),
 
 		// Footer
-		footer_clrBackground: black,
-		footer_clrFont: white,
+		footer_clrBackground: var(--nav_clrBackground),
+		footer_clrFont: inherit,
 
 		// Alert
 		alert_clrBackground: white,
-		alert-clickable_clrBacground--hover: #c0c3c7,
-		alert-clickable_clrBacground--active: var(--clrAccent),
+		alert-clickable_clrBackground--hover: #c0c3c7,
+		alert-clickable_clrBackground--active: var(--clrAccent),
 		alert_sdw: (rgba(0, 0, 0, 0.1) 0px 4px 12px),
 
 	),
@@ -52,20 +52,21 @@ $themes: (
 		// Nav
 		nav_clrBackground: #0d1117,
 		nav_clrBackground--scrolled: #161b22,
-		nav-action_clrBacground--hover: #2d333b,
-		nav-action_clrBacground--active: var(--clrAccent),
+		nav-action_clrBackground--hover: #2d333b,
+		nav-action_clrBackground--active: var(--clrAccent),
 		nav-action_clrIcon--active: #000000,
 
 		// Header
 		header_clrBackground: var(--nav_clrBackground),
 
 		// Footer
-		footer_clrBackground: var(--header_clrBackground),
+		footer_clrBackground: var(--clrBackground),
+		footer_clrFont: inherit,
 
 		// Alert
 		alert_clrBackground: #161b22,
-		alert-clickable_clrBacground--hover: #2d333b,
-		alert-clickable_clrBacground--active: var(--clrAccent),
+		alert-clickable_clrBackground--hover: #2d333b,
+		alert-clickable_clrBackground--active: var(--clrAccent),
 		alert_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px)
 	),
 

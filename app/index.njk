@@ -2,81 +2,33 @@
 <html lang="ru-RU">
 	<head>
 		{% include "head.njk" %}
+		<style>
+	svg {
+	width: 100px;
+	margin: 0
+	}
+</style>
 	</head>
 	<body>
 
 		{% include "nav.njk" %}
 		{% include "header.njk" %}
 
+		{% include "footer.njk" %}
+
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-			<button onclick="themerToggle()">Toggle theme</button>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit officia sed eum cupiditate iure sunt debitis dignissimos voluptatibus deserunt! Maiores iste est repudiandae ab optio fugiat qui praesentium deserunt illum.</p>
+					<button onclick="themerToggle()">Toggle</button>
+					{# {% for list in icons.icons %}
+						<span><svg style="--iconColor: var(--clrFont)"><use xlink:href="assets/images/icons.svg#{{ list }}"></use></svg></span>
+					{% endfor %} #}
 				</div>
 			</div>
 		</div>
 
-		{% include "footer.njk" %}
+		{% include "scripts.njk" %}
 
-		<script src="js/themer.js"></script>
-		<script src="js/scripts.js"></script>
-		<script src="js/alert-cookies.js"></script>
 
 	</body>
 </html>

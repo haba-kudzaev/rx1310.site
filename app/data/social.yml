@@ -1,46 +1,37 @@
-# url   : ссылка на ресурс (указывается без www и https://)
-# title : название ресурса, которое также добавляется в аттрибут title
-# avatar: аватарка на ресурсе
-# icon  : иконка ресурса
+# url       : ссылка на ресурс
+# title     : название ресурса, которое также добавляется в аттрибут title
+# iconColor : цвет иконки
 
 # ? Мой GitHub
 github:
-  url: "github.com/rx1310"
+  url: "https://github.com/rx1310"
   title: "GitHub"
-  avatar: null
-  icon: ""
 
 # ? Написать мне в Telegram
 telegram:
-  url: "t.me/rx1310"
+  url: "https://t.me/rx1310"
   title: "Telegram"
-  avatar: null
-  icon: ""
+  iconColor: "#26A5E4"
 
 # ? Мой Twitter
 twitter:
-  url: "twitter.com/rx1310"
+  url: "https://twitter.com/rx1310"
   title: "Twitter"
-  avatar: null
-  icon: ""
+  iconColor: "#1DA1F2"
 
 # ? Мой аккаунт на VK
 vk:
-  url: "vk.com/rx1310"
+  url: "https://vk.com/rx1310"
   title: "VK"
-  avatar: null
-  icon: ""
+  iconColor: "#0077FF"
 
 # ? Мой блог на Teletype
 teletype:
-  url: "teletype.in/@rx1310_blog"
-  title: "VK"
-  avatar: null
-  icon: ""
+  url: "https://teletype.in/@rx1310_blog"
+  title: "Teletype"
 
 # ? Аккаунт на Habr
 habr:
-  url: "habr.com/ru/users/rx1310/"
-  title: "VK"
-  avatar: null
-  icon: ""
+  url: "https://habr.com/ru/users/rx1310/"
+  title: "Habr"
+  iconColor: "#65A3BE"

@@ -21,7 +21,7 @@
 	&:focus,
 	&:focus-visible {
 
-		background-color: var(--alert-clickable_clrBacground--hover);
+		background-color: var(--alert-clickable_clrBackground--hover);
 
 		// Transform
 		@include k19.prefixer(
@@ -35,7 +35,7 @@
 	&:active {
 
 		color: white;
-		background-color: var(--alert-clickable_clrBacground--active);
+		background-color: var(--alert-clickable_clrBackground--active);
 
 		// Transform
 		@include k19.prefixer(

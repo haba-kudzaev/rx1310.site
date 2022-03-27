@@ -34,7 +34,7 @@
 
 	&:hover,
 	&:focus {
-		background: var(--nav-action_clrBacground--hover);
+		background: var(--nav-action_clrBackground--hover);
 	}
 
 	&::before:hover {
@@ -47,7 +47,7 @@
 	}
 
 	&:active {
-		background: var(--nav-action_clrBacground--active);
+		background: var(--nav-action_clrBackground--active);
 		color: var(--nav-action_clrIcon--active);
 	}
 
