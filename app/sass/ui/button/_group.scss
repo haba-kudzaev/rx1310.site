@@ -11,7 +11,7 @@
 	overflow: hidden;
 
 	@include k19.flexbox(inline);
-	@include k19.border-radius();
+	@include k19.border-radius(14px);
 
 	// @mod: Block
 	@include k19.m(block) {
