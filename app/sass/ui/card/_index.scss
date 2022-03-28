@@ -1,5 +1,5 @@
 /// @license  Apache License 2.0
-/// @date     2022/03/28 04:44:58
+/// @date     2022/03/26 04:43:19
 /// -----------------------------
 /// @author   Haba Kudzaev (rx1310)
 /// @mail     rx1310@inbox.ru
@@ -7,17 +7,24 @@
 
 .card {
 
-	background-color: var(--alert_clrBackground);
+	background-color: var(--card_clrBackground);
 	padding: 1em 1.2em;
 
-	@include k19.box-shadow(var(--alert_sdw));
+	@include k19.box-shadow(var(--card_sdw));
 	@include k19.border-radius();
 
-	// @element: Card Title
+	// @element: card Title
 	@include k19.e(title) {
 		margin-top: 0 !important;
-		padding: 0;
 		font-size: $font-size_h5;
 	}
+
+	// @element: card Message
+	@include k19.e(message) {
+		&:first-child { margin-top:    0; }
+		&:last-child  { margin-bottom: 0; }
+	}
+
+	@import 'clickable';
 
 }

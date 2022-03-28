@@ -34,11 +34,11 @@ $themes: (
 		footer_clrBackground: var(--nav_clrBackground),
 		footer_clrFont: inherit,
 
-		// Alert
-		alert_clrBackground: white,
-		alert-clickable_clrBackground--hover: #c0c3c7,
-		alert-clickable_clrBackground--active: var(--clrAccent),
-		alert_sdw: (rgba(0, 0, 0, 0.1) 0px 4px 12px),
+		// card
+		card_clrBackground: white,
+		card-clickable_clrBackground--hover: #c0c3c7,
+		card-clickable_clrBackground--active: var(--clrAccent),
+		card_sdw: (rgba(0, 0, 0, 0.1) 0px 4px 12px),
 
 		// Button
 		btn_clrBorder: #c0c3c7,
@@ -66,14 +66,14 @@ $themes: (
 		header_clrBackground: var(--nav_clrBackground),
 
 		// Footer
-		footer_clrBackground: var(--clrBackground),
+		footer_clrBackground: #07090c,
 		footer_clrFont: inherit,
 
-		// Alert
-		alert_clrBackground: #161b22,
-		alert-clickable_clrBackground--hover: #2d333b,
-		alert-clickable_clrBackground--active: var(--clrAccent),
-		alert_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px),
+		// card
+		card_clrBackground: #161b22,
+		card-clickable_clrBackground--hover: #2d333b,
+		card-clickable_clrBackground--active: var(--clrAccent),
+		card_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px),
 
 		// Button
 		btn_clrBorder: #2d333b,
