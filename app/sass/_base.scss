@@ -19,13 +19,16 @@ body {
 
 	font: {
 		size: $font-size;
-		family: 'Open Sans', sans-serif;
+		family: 'Fira Sans', sans-serif;
 	};
 
 	margin: 0;
 	scroll-behavior: smooth;
-	background-color: var(--clrBackground);
-	color: var(--clrFont);
+
+	@include k19.props-apply((
+		background-color: clrBackground,
+		color: clrFont
+	));
 
 	-webkit-font-smoothing: antialiased;
 
@@ -72,5 +75,39 @@ img {
 	cursor: not-allowed;
 
 	@include k19.opacity(0.50);
+
+}
+
+a {
+
+	color: var(--clrAccent);
+
+	&:hover { text-decoration: none; }
+
+}
+
+.theme-dark button[onclick*="themes.dark"],
+.theme-light button[onclick*="themes.light"] {
+
+	cursor: default;
+
+	@include k19.props-apply((
+		background-color: btn_clrBackground--active,
+		border-color: btn_clrBackground--active,
+		color: btn_clrFont--active
+	));
+
+}
+
+
+.mi {
+
+	@include k19.flexbox();
+	@include k19.align-items(center);
+
+	.material-icons {
+		margin-top: -1px;
+		margin-right: 8px;
+	}
 
 }

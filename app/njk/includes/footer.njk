@@ -1,32 +1,51 @@
 <footer class="footer_wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
-				<h6>Связь со мной</h6>
-				<div class="footer-links">
-					{% for id, data in social %}
-						<a
-							{% if data.iconColor != null %}
-								style="--iconColor: {{ data.iconColor }}"
-							{% endif %}
-							class="footer-links_link"
-							href="{{ data.url }}"
-							title="Нажмите, чтобы перейти в {{ data.title }} →"
-							aria-label="Перейти в {{ data.title }}">
-							<svg class="footer-links_link_icon">
-								<use xlink:href="assets/images/icons.svg#{{ id }}"></use>
-							</svg>
-							<span hidden>{{ data.title }}</span>
-						</a>
-					{% endfor %}
+
+			<div class="col-12 col-md-4 order-md-1">
+				<div class="footer">
+					<br>
+					<div class="card">
+						<h5 class="card_title mi"><span class="material-icons">dark_mode</span> Тема сайта</h5>
+						<p>Если Вам "бьет" в глаза светлая тема в темноте, то рекомендую сменить тему на тёмную.</p>
+						<div class="btn-group btn-group--block">
+							<button class="btn" onclick="themerSet(themes.light, colors.light)">Светлая</button>
+							<button class="btn" onclick="themerSet(themes.dark, colors.dark)">Темная</button>
+						</div>
+					</div>
 				</div>
-				<br>
-				<div class="alert">
-					<h5 class="alert_title">📃 Лицензии</h5>
-					<p class="alert_message">Материал сайта, а также сам сайт распространяется открыто по лицензии <a href="https://github.com/rx1310/rx1310.github.io/blob/main/LICENSE">Apache-2.0</a>. Под исключения попадают только средства разработки и графика сайта.</p>
-				</div>
-				<br>
 			</div>
+
+			<div class="col-12 col-md-8">
+				<div class="footer">
+
+					<h5>Связь со мной</h5>
+					<div class="links">
+						{% for id, data in social %}
+							<a
+								{% if data.iconColor != null %}
+									style="--iconColor: {{ data.iconColor }}"
+								{% endif %}
+								class="links_link"
+								href="{{ data.url }}"
+								title="Нажмите, чтобы перейти в {{ data.title }} →"
+								aria-label="Перейти в {{ data.title }}">
+								<svg class="links_link_icon">
+									<use xlink:href="assets/images/icons.svg#{{ id }}"></use>
+								</svg>
+								<span hidden>{{ data.title }}</span>
+							</a>
+						{% endfor %}
+					</div>
+
+					<h5>Лицензии</h5>
+					<p>Мой сайт является проектом с открытым <a href="https://github.com/rx1310/rx1310.github.io" title="Открыть репозиторий на GitHub →">исходным кодом</a>. Сайт находится под защитой лицензии <a href="https://github.com/rx1310/rx1310.github.io/blob/main/LICENSE">Apache-2.0</a>.</p>
+
+					<p disabled>Copyright &copy; 2022 Haba Kudzaev (rx1310)</p>
+
+				</div>
+			</div>
+
 		</div>
 	</div>
 </footer>

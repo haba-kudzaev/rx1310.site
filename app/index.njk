@@ -14,12 +14,16 @@
 		{% include "nav.njk" %}
 		{% include "header.njk" %}
 
-		{% include "footer.njk" %}
 
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<button onclick="themerToggle()">Toggle</button>
+					<button class="btn" onclick="themerToggle()">Toggle</button>
+
+					<p>lorem</p>
+					<p>lorem</p>
+					<p>lorem</p>
+					<p>lorem</p>
 					{# {% for list in icons.icons %}
 						<span><svg style="--iconColor: var(--clrFont)"><use xlink:href="assets/images/icons.svg#{{ list }}"></use></svg></span>
 					{% endfor %} #}
@@ -27,6 +31,7 @@
 			</div>
 		</div>
 
+		{% include "footer.njk" %}
 		{% include "scripts.njk" %}
 
 

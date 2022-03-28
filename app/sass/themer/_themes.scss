@@ -40,6 +40,12 @@ $themes: (
 		alert-clickable_clrBackground--active: var(--clrAccent),
 		alert_sdw: (rgba(0, 0, 0, 0.1) 0px 4px 12px),
 
+		// Button
+		btn_clrBorder: #c0c3c7,
+		btn_clrBackground--hover: var(--btn_clrBorder),
+		btn_clrBackground--active: var(--clrAccent),
+		btn_clrFont--active: white
+
 	),
 
 	// * Темная тема
@@ -67,7 +73,13 @@ $themes: (
 		alert_clrBackground: #161b22,
 		alert-clickable_clrBackground--hover: #2d333b,
 		alert-clickable_clrBackground--active: var(--clrAccent),
-		alert_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px)
+		alert_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px),
+
+		// Button
+		btn_clrBorder: #2d333b,
+		btn_clrBackground--hover: var(--btn_clrBorder),
+		btn_clrBackground--active: var(--clrAccent)
+
 	),
 
 );

@@ -1,0 +1,31 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/28 05:10:14
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+.btn-group {
+
+	border: 2px solid var(--clrAccent);
+	overflow: hidden;
+
+	@include k19.flexbox(inline);
+	@include k19.border-radius();
+
+	// @mod: Block
+	@include k19.m(block) {
+		@include k19.flexbox();
+		button {
+			@include k19.flex-grow(1);
+		}
+	}
+
+	& > button {
+
+		border: none;
+		margin: 1px;
+
+	}
+
+}

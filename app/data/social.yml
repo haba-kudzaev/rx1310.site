@@ -30,6 +30,12 @@ teletype:
   url: "https://teletype.in/@rx1310_blog"
   title: "Teletype"
 
+# ? Почта
+mailru:
+  url: "mailto:rx1310@inbox.ru"
+  title: "MAilRu"
+  iconColor: "#005FF9"
+
 # ? Аккаунт на Habr
 habr:
   url: "https://habr.com/ru/users/rx1310/"

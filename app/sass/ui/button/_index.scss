@@ -1,0 +1,100 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/28 04:40:45
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+@import 'group';
+
+.btn {
+
+	@include k19.border-radius();
+	@include k19.transition(
+		color .3s,
+		border-color .3s,
+		background .3s
+	);
+
+	border: {
+		width: 2px;
+		style: solid;
+		color: var(--btn_clrBorder);
+	}
+
+	text: {
+		overflow: ellipsis;
+		transform: uppercase;
+		align: center;
+	}
+
+	font: {
+		weight: bold;
+		size: 80%;
+	}
+
+  background: transparent;
+	display: inline-block;
+	box-sizing: border-box;
+  position: relative;
+  padding: .5em .8em;
+  margin: 0;
+  min-width: 64px;
+  letter-spacing: .1em;
+  cursor: pointer;
+  width: auto;
+  overflow: hidden;
+  line-height: normal;
+  vertical-align: middle;
+
+	// ? https://clck.ru/NfTMr
+	@include k19.prefixer(
+		font-smoothing,
+		inherit,
+		webkit moz-osx
+	);
+
+	&:hover,
+	&:focus {
+		@include k19.props-apply((
+			background-color: btn_clrBackground--hover,
+			border-color: btn_clrBackground--hover
+		));
+	}
+
+	&:active {
+		@include k19.props-apply((
+			background-color: btn_clrBackground--active,
+			border-color: btn_clrBackground--active,
+			color: btn_clrFont--active
+		));
+	}
+
+	// @mod: Button Borderless
+	@include k19.m(borderless) {
+		border: none !important;
+	}
+
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted royalblue;
+}

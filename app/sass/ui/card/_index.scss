@@ -1,0 +1,23 @@
+/// @license  Apache License 2.0
+/// @date     2022/03/28 04:44:58
+/// -----------------------------
+/// @author   Haba Kudzaev (rx1310)
+/// @mail     rx1310@inbox.ru
+/// @link     https://github.com/rx1310
+
+.card {
+
+	background-color: var(--alert_clrBackground);
+	padding: 1em 1.2em;
+
+	@include k19.box-shadow(var(--alert_sdw));
+	@include k19.border-radius();
+
+	// @element: Card Title
+	@include k19.e(title) {
+		margin-top: 0 !important;
+		padding: 0;
+		font-size: $font-size_h5;
+	}
+
+}
