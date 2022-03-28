@@ -6,7 +6,7 @@
 				<div class="footer">
 					<br>
 					<div class="card">
-						<h5 class="card_title mi"><span class="material-icons">dark_mode</span> Тема сайта</h5>
+						<h5 class="card_title mi"><span onclick="themerToggle()" class="material-icons" title="Нажми на иконочку))">dark_mode</span> Тема сайта</h5>
 						<p>Если Вам "бьет" в глаза светлая тема в темноте, то рекомендую сменить тему на тёмную.</p>
 						<div class="btn-group btn-group--block">
 							<button class="btn" onclick="themerSet(themes.light, colors.light)">Светлая</button>
@@ -33,7 +33,6 @@
 								<svg class="links_link_icon">
 									<use xlink:href="assets/images/icons.svg#{{ id }}"></use>
 								</svg>
-								<span hidden>{{ data.title }}</span>
 							</a>
 						{% endfor %}
 					</div>
