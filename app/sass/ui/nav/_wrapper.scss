@@ -26,11 +26,6 @@
 
 		@include k19.box-shadow(var(--nav_sdw));
 
-		// Dark Theme
-		.theme-dark & {
-			@include k19.box-shadow(none);
-		}
-
 	}
 
 }
