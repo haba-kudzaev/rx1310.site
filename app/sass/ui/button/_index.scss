@@ -13,11 +13,12 @@
 	@include k19.transition(
 		color .3s,
 		border-color .3s,
-		background .3s
+		background .3s,
+		transform .3s
 	);
 
 	border: {
-		width: 2px;
+		width: 1px;
 		style: solid;
 		color: var(--btn_clrBorder);
 	}
@@ -56,18 +57,29 @@
 
 	&:hover,
 	&:focus {
+
 		@include k19.props-apply((
 			background-color: btn_clrBackground--hover,
 			border-color: btn_clrBackground--hover
 		));
+
 	}
 
 	&:active {
+
 		@include k19.props-apply((
 			background-color: btn_clrBackground--active,
 			border-color: btn_clrBackground--active,
 			color: btn_clrFont--active
 		));
+
+		// Transform
+		@include k19.prefixer(
+			transform,
+			scale(.980),
+			ms webkit o moz
+		);
+
 	}
 
 	// @mod: Button Borderless
