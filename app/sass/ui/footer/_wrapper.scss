@@ -7,7 +7,9 @@
 
 .footer_wrapper {
 
-	background-color: var(--footer_clrBackground);
-	color: var(--footer_clrFont);
+	@include k19.props-apply((
+		background-color: footer_clrBackground,
+		color: footer_clrFont
+	));
 
 }

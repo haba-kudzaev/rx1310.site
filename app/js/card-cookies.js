@@ -1,6 +1,6 @@
 // ! Скрипт для скрытия карточки о куки
 
-const cookiesCard = document.getElementById("alertCookies");
+const cookiesCard = document.getElementById("cardCookies");
 const lsKey = "hideCookiesCard";
 
 // * Скрытие карточки при нажатии на нее
