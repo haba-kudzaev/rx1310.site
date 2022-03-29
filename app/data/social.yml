@@ -41,3 +41,9 @@ habr:
   url: "https://habr.com/ru/users/rx1310/"
   title: "Habr"
   iconColor: "#65A3BE"
+
+# ? Канал на YouTube
+youtube:
+  url: "https://www.youtube.com/channel/UCpDZ9tJJLNEWW0f8Twcnn_g"
+  title: "YouTube"
+  iconColor: "#FF0000"
