@@ -8,4 +8,17 @@
 			"</symbol>"
 		]
 	},
+
+	"Project [YML]": {
+		"prefix": "project",
+		"scope": "yaml,yml",
+		"body": [
+			"# ? $1",
+			"$2:",
+			" link: \"\\$3\"",
+			" name: \"\\$4\"",
+			" desc: \"\\$5\"",
+			" icon: \"\\$6\""
+		]
+	},
 }
