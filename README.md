@@ -2,14 +2,16 @@
 ======
 Репозиторий с исходным кодом персонального сайта Асхаба Кудзаева (rx1310).
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f17d8dc6-b0b7-4e77-a46d-2e4c4c3b4488/deploy-status)](https://app.netlify.com/sites/rx1310/deploys)
+
 ![Последний коммит](https://img.shields.io/github/last-commit/rx1310/rx1310.github.io)
 ![Количество коммитов в год](https://img.shields.io/github/commit-activity/y/rx1310/rx1310.github.io)
 ![Количество ЯП](https://img.shields.io/github/languages/count/rx1310/rx1310.github.io?color=fff)
 ![Топ ЯП](https://img.shields.io/github/languages/top/rx1310/rx1310.github.io?color=C76494)
 ![Размер репозитория](https://img.shields.io/github/repo-size/rx1310/rx1310.github.io?color=ffb600)
 ![Размер кода](https://img.shields.io/github/languages/code-size/rx1310/rx1310.github.io)
-[![Количество открытых issue](https://img.shields.io/github/issues-raw/rx1310/rx1310.github.io)
-![Количество закрытых issues](https://img.shields.io/github/issues-closed-raw/rx1310/rx1310.github.io?color=354a6d)](https://github.com/rx1310/rx1310.github.io/issues)
+<!-- [![Количество открытых issue](https://img.shields.io/github/issues-raw/rx1310/rx1310.github.io)
+![Количество закрытых issues](https://img.shields.io/github/issues-closed-raw/rx1310/rx1310.github.io?color=354a6d)](https://github.com/rx1310/rx1310.github.io/issues) -->
 [![Количество открытых PR](https://img.shields.io/github/issues-pr-raw/rx1310/rx1310.github.io?label=open%20PR%27s)
 ![Количество закрытых PR](https://img.shields.io/github/issues-pr-closed-raw/rx1310/rx1310.github.io?label=closed%20PR%27s)](https://github.com/rx1310/rx1310.github.io/pulls)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=rx1310.rx1310.github.io)

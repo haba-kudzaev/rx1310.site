@@ -6,6 +6,7 @@
 
 			<div class="col-12 col-md-4 order-md-1">
 				<div class="footer">
+
 					<br>
 					<div class="card">
 						<h5 class="card__title mi"><span onclick="themerToggle()" class="material-icons" title="Нажми на иконочку))">dark_mode</span> Тема сайта</h5>
@@ -15,6 +16,17 @@
 							<button class="btn" onclick="themerSet(themes.dark, colors.dark)">Темная</button>
 						</div>
 					</div>
+
+					<br>
+					<div class="card">
+						<h5 class="card__title mi"><span class="material-icons">bar_chart</span>Статус сайта</h5>
+						<img src="https://api.netlify.com/api/v1/badges/f17d8dc6-b0b7-4e77-a46d-2e4c4c3b4488/deploy-status" alt="Статус деплоя на Netlify">
+						<br>
+						{% for badge, data in badges %}
+							<img src="{{ data.src }}" alt="{{ data.alt }}" title="{{ data.alt }}">
+						{% endfor %}
+					</div>
+
 				</div>
 			</div>
 
@@ -41,6 +53,8 @@
 					<p>Мой сайт является проектом с открытым <a href="https://github.com/rx1310/rx1310.github.io" title="Открыть репозиторий на GitHub →">исходным кодом</a>. Сайт находится под защитой лицензии <a href="https://github.com/rx1310/rx1310.github.io/blob/main/LICENSE">Apache-2.0</a>.</p>
 
 					<p disabled>Copyright &copy; 2022 Haba Kudzaev (rx1310)</p>
+
+					<br>
 				</div>
 			</div>
 

@@ -1,0 +1,51 @@
+lastcommit:
+  src: "https://img.shields.io/github/last-commit/rx1310/rx1310.github.io"
+  alt: "Последний коммит в репо"
+
+commitsYear:
+  src: "https://img.shields.io/github/commit-activity/y/rx1310/rx1310.github.io"
+  alt: "Количество коммитов в год"
+
+langs:
+  src: "https://img.shields.io/github/languages/count/rx1310/rx1310.github.io?color=fff"
+  alt: "Количество языков программирования, использованных в разработке сайта"
+
+topLang:
+  src: "https://img.shields.io/github/languages/top/rx1310/rx1310.github.io?color=C76494"
+  alt: "Топовый язык программирования в репо"
+
+repoSize:
+  src: "https://img.shields.io/github/repo-size/rx1310/rx1310.github.io?color=ffb600"
+  alt: "Размер репозитория"
+
+codeSize:
+  src: "https://img.shields.io/github/languages/code-size/rx1310/rx1310.github.io"
+  alt: "Размер кода"
+
+openPRs:
+  src: "https://img.shields.io/github/issues-pr-raw/rx1310/rx1310.github.io?label=open%20PR%27s"
+  alt: "Количество открытых Pull Request в репо"
+
+closedPRs:
+  src: "https://img.shields.io/github/issues-pr-closed-raw/rx1310/rx1310.github.io?label=closed%20PR%27s"
+  alt: "оличество закрытых Pull Request в репо"
+
+license:
+  src: "https://img.shields.io/github/license/rx1310/rx1310.github.io?label=license"
+  alt: "Лицензия"
+
+visitors:
+  src: "https://visitor-badge.laobi.icu/badge?page_id=rx1310.rx1310.github.io"
+  alt: "Количество посетителей в репо"
+
+kalium19Ver:
+  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/@rx1310/kalium19/develop?label=kalium19"
+  alt: "Версия Kalium19, используемая в разработке"
+
+eleventyVer:
+  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/@11ty/eleventy/develop?label=11ty"
+  alt: "Версия Eleventy, используемая в разработке"
+
+sassVer:
+  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/sass/develop?label=sass"
+  alt: "Версия SASS, используемая в разработке"

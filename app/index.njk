@@ -19,7 +19,7 @@
 
 					<div class="row">
 						{% for col, list in projects %}
-							<div class="col-12 col-md-6 col-xl-4">
+							<div class="col-12 col-md-4">
 								{% for project, data in list %}
 									<div class="card card--clickable" title="Нажмите, чтобы перейти на страницу проекта {{ data.name }} →">
 										{% if data.icon %}
@@ -37,7 +37,7 @@
 
 					<center>
 						<a href="https://github.com/rx1310">
-							<button class="btn btn--">
+							<button class="btn btn--sm">
 								<div class="mi">
 									<span class="material-icons">more</span> Показать все
 								</div>

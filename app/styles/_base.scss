@@ -25,7 +25,7 @@ body {
 
 	// https://developer.mozilla.org/en-US/docs/Web/CSS/font-smooth
 	-webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
 
 	// https://developer.mozilla.org/ru/docs/Web/CSS/user-select
 	@include k19.prefixer-legacy(
@@ -56,10 +56,10 @@ h6 { font-size: $font-size_h6; }
 
 img {
 	border-style: none;
-  overflow: none;
-  max-width: 100%;
-  max-height: 100%;
-  vertical-align: middle;
+	overflow: none;
+	max-width: 100%;
+	max-height: 100%;
+	vertical-align: middle;
 }
 
 a {
@@ -89,7 +89,7 @@ a {
 	@include k19.align-items(center);
 
 	.material-icons {
-		margin-top: -1px;
+		// margin-top: -1px;
 		margin-right: 8px;
 	}
 

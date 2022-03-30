@@ -81,7 +81,10 @@
 		border: none !important;
 	} // ! Button:Borderless
 
-	//
+	// * Button:SM
+	@include k19.m(sm) {
+		zoom: 0.8;
+	}
 
 } // ! Btn (Button)
 
