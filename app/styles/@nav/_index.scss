@@ -76,7 +76,7 @@
 		/*   Flexbox */ @include k19.justify-content(center);
 		/*   Flexbox */ @include k19.align-items(center);
 
-		@include k19.border-radius(100%);
+		@include k19.border-radius(100px);
 		@include k19.transition(
 			color .3s,
 			background .3s,
