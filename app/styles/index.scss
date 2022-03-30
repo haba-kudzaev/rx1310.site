@@ -1,0 +1,37 @@
+@use 'sass:math'; // ? Модули из пакета SASS
+@use 'sass:map';  // ? Модули из пакета SASS
+
+@use 'variables' as *; // ? Переменные
+
+// ? Модуль Kalium19 (https://github.com/91muilak)
+@use '../../node_modules/@rx1310/kalium19' as k19 with (
+
+	// настройка миксина border-radius();
+	$border-radius: 12px,
+
+	// настрока миксинов BEM
+	$bem: (
+		element: '__',
+		modifier: '--'
+	),
+
+	// настройка миксина media()
+	$mediaQueries: (
+		null: null,
+		sm: 'screen and (min-width: 576px)',
+		md: 'screen and (min-width: 768px)',
+		lg: 'screen and (min-width: 992px)',
+		xl: 'screen and (min-width: 1200px)',
+	)
+
+);
+
+// ? Импорты
+@import 'themer';
+@import 'base';
+
+@import '@nav';
+@import '@header';
+@import '@footer';
+@import '@card';
+@import '@btn';

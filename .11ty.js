@@ -8,7 +8,7 @@ module.exports = function(cnf) {
 	cnf.addDataExtension("yaml", contents => yaml.load(contents));
 	cnf.addDataExtension('yml', contents => yaml.load(contents));
 	cnf.addPassthroughCopy('app/assets');
-	cnf.addPassthroughCopy('app/js');
+	cnf.addPassthroughCopy('app/scripts');
 	cnf.setUseGitIgnore(true);
 
 	// ? Конфигурация Prism
@@ -36,6 +36,7 @@ module.exports = function(cnf) {
 				'./dist',
 			]
 		},
+
 		files: [
 			'app/styles/**/*.*',
 			'app/scripts/**/*.*'
@@ -81,8 +82,8 @@ module.exports = function(cnf) {
 		dir: {
 			input: 'app',
 			output: 'dist',
-			includes: 'njk/includes/',
-			layouts: 'njk/layouts/',
+			includes: 'includes/',
+			layouts: 'layouts/',
 			data: "data"
 		},
 

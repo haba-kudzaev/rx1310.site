@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru-RU">
 	<head>
-		{% include "head.njk" %}
-		<style>
-	svg {
-	width: 100px;
-	margin: 0
-	}
-</style>
+		{% include "_head/meta.njk" %}
+		{% include "_head/link.njk" %}
 	</head>
 	<body>
 
 		{% include "nav.njk" %}
 		{% include "header.njk" %}
 
+
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
+
 					<h2>Мои проекты</h2>
 					<p>Я нахожусь в IT-сфере чуть более 5 лет (да, это очень мало для IT-индустрии) и за всё время изучения и практики у меня набралось несколько своих пет-проектов. Вот список этих проектов.</p>
+
 					<div class="row">
 						{% for col, list in projects %}
 							<div class="col-12 col-md-6 col-xl-4">
 								{% for project, data in list %}
 									<div class="card card--clickable" title="Нажмите, чтобы перейти на страницу проекта {{ data.name }} →">
 										{% if data.icon %}
-											<img class="card_icon" src="{{ data.icon }}" alt="Иконка проекта {{ data.name }}">
+											<img class="card__icon" src="{{ data.icon }}" alt="Иконка проекта {{ data.name }}">
 										{% endif %}
-										<a href="{{ data.link }}" class="card_link"></a>
-										<h5 class="card_title">{{ data.name }}</h5>
-										<p class="card_message">{{ data.desc }}</p>
+										<a href="{{ data.link }}" class="card__link"></a>
+										<h5 class="card__title">{{ data.name }}</h5>
+										<p class="card__message">{{ data.desc }}</p>
 									</div>
 									<br>
 								{% endfor %}
 							</div>
 						{% endfor %}
 					</div>
+
 					<center>
 						<a href="https://github.com/rx1310">
 							<button class="btn btn--">
@@ -45,6 +44,7 @@
 							</button>
 						</a>
 					</center>
+
 				</div>
 			</div>
 		</div>
@@ -52,8 +52,8 @@
 		<br>
 
 		{% include "footer.njk" %}
-		{% include "scripts.njk" %}
 
+		{% include "scripts.njk" %}
 
 	</body>
 </html>

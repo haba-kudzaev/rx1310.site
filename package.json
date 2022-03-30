@@ -1,26 +1,63 @@
 {
-	"scripts": {
-		"start": "run-p 11ty:serve sass:watch",
-		"build": "run-s sass:compile 11ty:build",
-		"11ty:build": "npx @11ty/eleventy --config=.11ty.js",
-		"11ty:serve": "npx @11ty/eleventy --serve --config=.11ty.js",
-		"sass:compile": "sass --no-source-map app/sass/:dist/css/ --style compressed",
-		"sass:watch": "sass --no-source-map app/sass/:dist/css/ --watch"
-	},
-	"devDependencies": {
-		"@11ty/eleventy": "^1.0.0",
-		"nunjucks": "^3.2.3",
-		"prismjs": "^1.27.0",
-		"sanitize.css": "^13.0.0",
-		"sass": "^1.49.9"
-	},
-	"dependencies": {
-		"@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
-		"@rx1310/grid-v4": "^4.4.2",
-		"@rx1310/kalium19": "^22.1.0",
-		"markdown-it": "^12.3.2",
-		"markdown-it-attrs": "^4.1.3",
-		"npm-run-all": "^4.1.5",
-		"js-yaml": "^4.1.0"
-	}
+  "name": "rx1310.site",
+  "version": "1.0.0",
+  "versionType": "pre-alpha",
+  "description": "Сайт молодого и начинающего разработчика из России, интересующегося веб-разработкой (front-end), разработкой Android-приложений и Linux.",
+  "main": "app/index.njk",
+  "scripts": {
+    "start": "run-p 11ty:serve sass:watch",
+    "build": "run-s sass:compile 11ty:build",
+    "sass:compile": "sass --no-source-map app/styles/:dist/css/ --style compressed",
+    "sass:watch": "sass --no-source-map app/styles/:dist/css/ --watch",
+    "11ty:serve": "npx @11ty/eleventy --serve --config=.11ty.js",
+    "11ty:build": "npx @11ty/eleventy --config=.11ty.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rx1310/rx1310.github.io.git"
+  },
+  "engines": {
+    "node": ">= 16.14.0"
+  },
+  "keywords": [
+    "rx1310",
+    "11ty",
+    "sass",
+    "netlify",
+    "kalium19",
+    "git",
+    "vscode"
+  ],
+  "author": {
+    "name": "Haba Kudzaev (rx1310)",
+    "email": "rx1310@inbox.ru",
+    "url": "https://rx1310.site"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://github.com/rx1310/rx1310.github.io/blob/main/LICENSE"
+    }
+  ],
+  "bugs": {
+    "url": "https://t.me/rx1310"
+  },
+  "homepage": "https://github.com/rx1310/rx1310.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@rx1310/kalium19": "^22.1.0",
+    "js-yaml": "^4.1.0",
+    "markdown-it": "^12.3.2",
+    "markdown-it-attrs": "^4.1.3",
+    "npm-run-all": "^4.1.5",
+    "nunjucks": "^3.2.3",
+    "prismjs": "^1.27.0",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "@rx1310/grid-v4": "^4.4.2",
+    "sanitize.css": "^13.0.0"
+  }
 }

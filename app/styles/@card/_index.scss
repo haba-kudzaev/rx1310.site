@@ -1,0 +1,91 @@
+// * Card
+@include k19.b(card) {
+
+	background-color: var(--card_clrBackground);
+	padding         : 1em 1.2em;
+	position        : relative;
+
+	@include k19.box-shadow(var(--card_sdw));
+	@include k19.border-radius();
+
+	// * Card Title
+	@include k19.e(title) {
+		margin-top: 0 !important;
+		font-size: $font-size_h5;
+	} // ! Card Title
+
+	// * Card Message
+	@include k19.e(message) {
+		&:first-child { margin-top:    0; }
+		&:last-child  { margin-bottom: 0; }
+	} // ! Card Message
+
+	// * Card Icon
+	@include k19.e(icon) {
+
+		$size: 80px;
+		/* $size */ width : $size;
+		/* $size */ height: $size;
+
+		float : right;
+		margin: 0 0 1em 1em;
+
+		@include k19.border-radius(100%);
+
+	} // ! Card Icon
+
+	// * Card Link
+	@include k19.e(link) {
+		&::before {
+			content : '';
+			width   : 100%;
+			height  : 100%;
+			position: absolute;
+			top     : 0;
+			left    : 0;
+		}
+	} // ! Card Link
+
+	// * Card:Clickable
+	@include k19.m(clickable) {
+
+		cursor: pointer;
+
+		@include k19.transition(
+			transform .3s,
+			color .3s,
+			background .3s
+		);
+
+		&:hover,
+		&:focus,
+		&:focus-visible {
+
+			background-color: var(--card-clickable_clrBackground--hover);
+
+			// Transform
+			@include k19.prefixer(
+				transform,
+				scale(1.015),
+				ms webkit o moz
+			);
+
+		}
+
+		&:active {
+
+			color: white;
+			background-color: var(--card-clickable_clrBackground--active);
+
+			// Transform
+			@include k19.prefixer(
+				transform,
+				scale(1.005),
+				ms webkit o moz
+			);
+
+		}
+
+	} // ! Card:Clickable
+
+}

@@ -1,0 +1,24 @@
+@import 'themes';
+
+@each $theme-name, $map in $themes {
+	:root[class="theme-#{$theme-name}"] {
+		color-scheme: #{$theme-name};
+		@each $key, $value in $map {
+			--#{$key}: #{$value};
+		}
+	}
+}
+
+// Патч для кнопок смены темы в Footer
+.theme-dark button[onclick*="themes.dark"],
+.theme-light button[onclick*="themes.light"] {
+
+	cursor: default;
+
+	@include k19.props-apply((
+		background-color: btn_clrBackground--active,
+		border-color: btn_clrBackground--active,
+		color: btn_clrFont--active
+	));
+
+}
