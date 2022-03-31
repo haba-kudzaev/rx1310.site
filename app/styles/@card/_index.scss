@@ -50,6 +50,9 @@
 		}
 	} // ! Card Link
 
+	// * Card Divider
+	hr { border-top-style: dashed; }
+
 	// * Card:Clickable
 	@include k19.m(clickable) {
 
