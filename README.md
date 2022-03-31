@@ -120,8 +120,8 @@ npm run <команда>
 dir: {
 	input: 'app',
 	output: 'dist',
-	includes: 'njk/includes/',
-	layouts: 'njk/layouts/',
+	includes: 'includes/',
+	layouts: 'layouts/',
 	data: "data"
 },
 ```
