@@ -90,11 +90,17 @@ ul {
 
 }
 
-a {
-
+a, a:visited {
 	color: var(--clrAccent);
-
 	&:hover { text-decoration: none; }
+}
+
+hr {
+
+	padding: 0;
+	height: 0;
+	border: none;
+	border-top: 1px solid var(--clrDivider);
 
 }
 
