@@ -73,8 +73,8 @@ $themes: (
 		// * Button
 		btn_clrBorder: #2d333bad,
 		btn_clrBackground--hover: var(--btn_clrBorder),
-		btn_clrBackground--active: var(--clrAccent)
-
+		btn_clrBackground--active: var(--clrAccent),
+		btn_clrFont--active: var(--clrBackground)
 	)
 
 );
