@@ -35,6 +35,6 @@ header:
 #    alt: "Image description"
 
 # ? Настройка Footer
-# * showSiteStatus: отображение статуса сайта (коммиты, деплой, версии и тп)
+# * showSiteStatusCard: отображение статуса сайта (коммиты, деплой, версии и тп)
 footer:
-  showSiteStatus: false
+  showSiteStatusCard: false

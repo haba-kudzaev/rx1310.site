@@ -17,7 +17,7 @@
 						</div>
 					</div>
 
-					{% if footer.showSiteStatus != false %}
+					{% if footer.showSiteStatusCard != false %}
 						<br>
 						<div class="card">
 							<h5 class="card__title mi"><span class="material-icons">bar_chart</span>Статус сайта</h5>
@@ -36,11 +36,12 @@
 				<div class="footer">
 
 					<h5>Связь со мной</h5>
-					<p>Ниже список основным моих соц. сетей, по которым можно связаться со мной или следить за тем, что нового я делаю.</p>
-					<div>
-						{% for id, data in social %}
-							{{ links.link(data.title, data.url, "icons", id, data.iconColor) }}
-						{% endfor %}
+						<p>Ниже список основным моих соц. сетей, по которым можно связаться со мной или следить за тем, что нового я делаю.</p>
+						<div>
+							{% for id, data in social %}
+								{{ links.link(data.title, data.url, "icons", id, data.iconColor) }}
+							{% endfor %}
+						</div>
 					</div>
 
 					<h5>Поддержать</h5>

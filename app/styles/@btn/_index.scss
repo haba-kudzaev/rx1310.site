@@ -23,11 +23,6 @@
 		align    : center;
 	}
 
-	// * Remove Text Transform
-	&.tt--none {
-		text-transform: none;
-	}
-
 	font: {
 		weight: bold;
 		size  : 80%;
@@ -89,6 +84,11 @@
 	// * Button:SM
 	@include k19.m(sm) {
 		zoom: 0.8;
+	}
+
+	// * Remove Text Transform
+	&.tt--none {
+		text-transform: none;
 	}
 
 } // ! Btn (Button)

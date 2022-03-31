@@ -4,7 +4,6 @@ page:
 
 # ? Настройка навигационной панели
 nav:
-  showScrollUpAction: true
   showGoToBlogAction: true
 
 # ? Настройка Header
@@ -17,4 +16,4 @@ header:
 
 # ? Настройка Footer
 footer:
-  showSiteStatus: true
+  showSiteStatusCard: true
