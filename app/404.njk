@@ -1,0 +1,69 @@
+---
+permalink: 404.html
+eleventyExcludeFromCollections: true
+
+page:
+  title: "Страница не найдена / rx1310"
+
+nav:
+  title: "default"
+  showBackAction: true
+  showScrollUpAction: false
+
+header:
+  title: "Страница не найдена 😔"
+  subtitle: "Ooops! Страницы не существует. Возможно ссылка, по которой вы перешли более не актуальна."
+  image:
+    url: "https://st3.depositphotos.com/1001599/12537/v/450/depositphotos_125371498-stock-illustration-browser-window-with-404-error.jpg?forcejpeg=true"
+    alt: "Image description"
+---
+
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		{% include "_head/meta.njk" %}
+		{% include "_head/link.njk" %}
+		<style>
+			:root[class=theme-light] {
+				--clrAccent: #009688;
+				--clrBackground: #e0f2f1;
+				--clrFont: #00241e;
+				--nav_clrBackground: #b2dfdb;
+				--nav-action_clrBackground--hover: #4db6ac;
+			}
+
+			:root[class=theme-dark] {
+				color-scheme: dark;
+				--clrAccent: #fff;
+				--clrBackground: #212121;
+				--clrFont: #fafafa;
+				--nav_clrBackground: #424242;
+				--nav-action_clrBackground--hover: #757575;
+			}
+		</style>
+	</head>
+	<body>
+
+		{% include "nav.njk" %}
+		{% include "header.njk" %}
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<h3>Что можно сделать?</h3>
+					<p>Ну есть несколько вариантов:</p>
+					<ul>
+						<li>поиграть в <a href="https://rx1310.github.io/2048/">2048</a> прямо в браузере,</li>
+						<li>сообщить мне в <a href="{{ social.telegram.url }}" title="Нажмите по ссылке, чтобы написать мне">Telegram</a> о проблеме,</li>
+						<li>ждать...</li>
+					</ul>
+					<h6>testing</h6>
+					<button class="btn tt--none" onclick="themerToggle()">themerToggle()</button>
+				</div>
+			</div>
+		</div>
+
+		{% include "scripts.njk" %}
+
+	</body>
+</html>
