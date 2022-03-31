@@ -4,12 +4,14 @@
 			<div class="col-12">
 				<div class="header">
 
-					<img
-						src="{{ header.image.url }}"
-						alt="{{ header.image.alt }}"
-						title="{{ header.image.alt }}"
-						class="header__image">
-						
+					{% if header.image != null %}
+						<img
+							src="{{ header.image.url }}"
+							alt="{{ header.image.alt }}"
+							title="{{ header.image.alt }}"
+							class="header__image">
+					{% endif %}
+
 					<h1 class="header__title">{{ header.title }}</h1>
 					<p class="header__subtitle">{{ header.subtitle }}</p>
 

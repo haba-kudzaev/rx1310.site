@@ -12,6 +12,14 @@
 							class="nav__action material-icons">
 							navigate_before
 						</button>
+					{% elif nav.showGoToBlogAction != false %}
+						<button
+							title="Перейти к блогу"
+							aria-label="Блог"
+							onclick="window.open('blog/','_self');"
+							class="nav__action material-icons">
+							book
+						</button>
 					{% else %}
 						<span class="nav__action" disabled></span>
 					{% endif %}
