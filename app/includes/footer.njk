@@ -17,15 +17,17 @@
 						</div>
 					</div>
 
-					<br>
-					<div class="card">
-						<h5 class="card__title mi"><span class="material-icons">bar_chart</span>Статус сайта</h5>
-						<img src="https://api.netlify.com/api/v1/badges/f17d8dc6-b0b7-4e77-a46d-2e4c4c3b4488/deploy-status" alt="Статус деплоя на Netlify">
+					{% if footer.showSiteStatus != false %}
 						<br>
-						{% for badge, data in badges %}
-							<img src="{{ data.src }}" alt="{{ data.alt }}" title="{{ data.alt }}">
-						{% endfor %}
-					</div>
+						<div class="card">
+							<h5 class="card__title mi"><span class="material-icons">bar_chart</span>Статус сайта</h5>
+							<img src="https://api.netlify.com/api/v1/badges/f17d8dc6-b0b7-4e77-a46d-2e4c4c3b4488/deploy-status" alt="Статус деплоя на Netlify">
+							<br>
+							{% for badge, data in badges %}
+								<img src="{{ data.src }}" alt="{{ data.alt }}" title="{{ data.alt }}">
+							{% endfor %}
+						</div>
+					{% endif %}
 
 				</div>
 			</div>
