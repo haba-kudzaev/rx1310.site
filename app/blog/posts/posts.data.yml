@@ -1,4 +1,5 @@
 layout: blogpost.njk
+date: "Created"
 tags:
   - blog
 nav:

@@ -9,21 +9,23 @@
 		{% include "nav.njk" %}
 		{% include "header.njk" %}
 
-		<br>
-
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-md-8">
-					{% for post in collections.blog %}
-						<div class="card card--clickable">
-							<a href="{{ post.url | url }}" class="card__link"></a>
-							<h5 class="card__title">{{ post.data.header.title }}</h5>
-							<p class="card__message">{{ post.data.header.subtitle }}</p>
-							<p class="card__message mi" disabled><span class="material-icons">edit_calendar</span> {{ post.date }}</p>
-						</div>
-						<br>
-					{% endfor %}
-					</ol>
+					<ul class="list-posts">
+						<li class="title">Посты</li>
+						{% for post in collections.blog %}
+							<li class="post">
+								<a href="{{ post.url | url }}" class="post__link"></a>
+								<div class="mi">
+									<span class="material-icons">article</span>
+									<span class="post__title">{{ post.data.header.title }}</span>
+								</div>
+								<p class="post__description">{{ post.data.header.subtitle }}</p>
+								<small disabled>{{ post.date.toUTCString() }}</small>
+							</li>
+						{% endfor %}
+					</ul>
 				</div>
 			</div>
 		</div>
