@@ -110,6 +110,31 @@
 		&:first-child { margin-left : -9px; }
 		&:last-child  { margin-right: -7px; }
 
+		// * Nav Link
+		// a {
+
+		// 	@include k19.transition( color .3s );
+
+		// 	color: inherit;
+		// 	text-decoration: none;
+
+		// 	&::before {
+		// 		content : '';
+		// 		width   : 100%;
+		// 		height  : 100%;
+		// 		position: absolute;
+		// 		top     : 0;
+		// 		left    : 0;
+		// 	}
+
+		// 	&:active {
+		// 		@include k19.props-apply((
+		// 			color: nav-action_clrIcon--active,
+		// 		));
+		// 	}
+
+		// }
+
 		// * Nav Action:Disabled
 		@include k19.m(disabled) {
 

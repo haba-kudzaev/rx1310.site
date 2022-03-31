@@ -8,9 +8,10 @@ $themes: (
 		clrAccent: #006ad8,
 		clrBackground: #f6f8fa,
 		clrFont: #000,
+		clrDivider: #b8b8b8,
 
 		// * Nav
-		nav_clrBackground: #e8ebef,
+		nav_clrBackground: #e8ebefcc,
 		nav_clrBackground--scrolled: #ffffff,
 		nav-action_clrBackground--hover: #c0c3c7,
 		nav-action_clrBackground--active: var(--clrAccent),
@@ -46,9 +47,10 @@ $themes: (
 		clrAccent: #0071e9,
 		clrBackground: #0a0c10,
 		clrFont: #fff,
+		clrDivider: #525a66,
 
 		// * Nav
-		nav_clrBackground: #0d1117,
+		nav_clrBackground: #0d1117c5,
 		nav_clrBackground--scrolled: #161b22,
 		nav-action_clrBackground--hover: #2d333b,
 		nav-action_clrBackground--active: var(--clrAccent),
