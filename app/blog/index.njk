@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		{% include "_head/meta.njk" %}
+		{% include "_head/link.njk" %}
+		<link rel="stylesheet" href="/css/vendor/typewriter.css">
+	</head>
+	<body>
+
+		{% include "nav.njk" %}
+		{% include "header.njk" %}
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					{% if collections.blog == null %}
+						<div class="block">
+							<div class="side">
+								<h4>Постов пока нет</h4>
+								<blockquote cite="https://tproger.ru/devnull/programming-quotes/">
+									<p>«Для меня долгое время было загадкой, как что-то очень дорогое и технологичное может быть столь бесполезным. И вскоре я осознал, что компьютер — это глупая машина, обладающая способностями выполнять невероятно умные вещи, тогда как программисты — это умные люди, у которых талант делать невероятные глупости. Короче, они нашли друг друга.»</p>
+									<p disabled>— Bill Bryson</p>
+								</blockquote>
+							</div>
+							<div>
+								<br>
+								<div class="typewriter anim-typewriter">
+									<div class="slide"><i></i></div>
+									<div class="paper"></div>
+									<div class="keyboard"></div>
+								</div>
+							</div>
+						</div>
+						<br>
+					{% else %}
+						<ul class="list-posts">
+							<li class="title">Посты</li>
+							{% for post in collections.blog %}
+								<li class="post">
+									<a href="{{ post.url | url }}" class="post__link"></a>
+									<div class="mi">
+										<span class="material-icons">article</span>
+										<span class="post__title">{{ post.data.header.title }}</span>
+									</div>
+									<p class="post__description">{{ post.data.header.subtitle }}</p>
+									<small disabled>{{ post.date.toUTCString() }}</small>
+								</li>
+							{% endfor %}
+						</ul>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+
+		{% include "footer.njk" %}
+		{% include "scripts.njk" %}
+
+	</body>
+</html>

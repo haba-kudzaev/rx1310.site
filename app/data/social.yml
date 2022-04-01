@@ -1,0 +1,49 @@
+# * url       : ссылка на ресурс
+# * title     : название ресурса, которое также добавляется в аттрибут title
+# * iconColor : цвет иконки
+
+# ? Мой GitHub
+github:
+  url: "https://github.com/rx1310"
+  title: "GitHub"
+
+# ? Написать мне в Telegram
+telegram:
+  url: "https://t.me/rx1310"
+  title: "Telegram"
+  iconColor: "#26A5E4"
+
+# ? Мой Twitter
+twitter:
+  url: "https://twitter.com/rx1310"
+  title: "Twitter"
+  iconColor: "#1DA1F2"
+
+# ? Мой аккаунт на VK
+vk:
+  url: "https://vk.com/rx1310"
+  title: "VK"
+  iconColor: "#0077FF"
+
+# ? Мой блог на Teletype
+teletype:
+  url: "https://teletype.in/@rx1310_blog"
+  title: "Teletype"
+
+# ? Почта
+mailru:
+  url: "mailto:rx1310@inbox.ru"
+  title: "MAilRu"
+  iconColor: "#005FF9"
+
+# ? Аккаунт на Habr
+habr:
+  url: "https://habr.com/ru/users/rx1310/"
+  title: "Habr"
+  iconColor: "#65A3BE"
+
+# ? Канал на YouTube
+youtube:
+  url: "https://www.youtube.com/channel/UCpDZ9tJJLNEWW0f8Twcnn_g"
+  title: "YouTube"
+  iconColor: "#FF0000"

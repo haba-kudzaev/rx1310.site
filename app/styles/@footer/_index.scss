@@ -1,0 +1,54 @@
+// * Footer
+@include k19.b(footer) {
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 2em;
+	}
+
+	// * Footer Wrapper
+	@include k19.e(wrapper) {
+		@include k19.props-apply((
+			background-color: footer_clrBackground,
+			color: footer_clrFont
+		));
+	} // ! Footer Wrapper
+
+	// * Footer Links
+	@include k19.e(links) {
+
+		margin-right   : .5em;
+		color          : inherit;
+		text-decoration: none;
+
+		// * Footer Links Icon
+		@include k19.e(icon) {
+
+			$size: 28px;
+			/* $size */ height: $size;
+			/* $size */ width: $size;
+
+			@include k19.transition(transform .3s);
+
+			&:hover,
+			&:focus,
+			&:focus-visible {
+				@include k19.prefixer(
+					transform,
+					scale(1.100),
+					ms webkit o moz
+				);
+			}
+
+			&:active {
+				@include k19.prefixer(
+					transform,
+					scale(1.050),
+					ms webkit o moz
+				);
+			}
+
+		} // ! Footer Links Icon
+
+	} // ! Footer Links
+
+}

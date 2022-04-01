@@ -1,0 +1,52 @@
+// * Header
+@include k19.b(header) {
+
+	padding-bottom: 1em;
+
+	// * Header Title
+	@include k19.e(title) {
+		margin-top: .8em;
+		font-size : $font-size_h3;
+	}
+
+	// * Header Image
+	@include k19.e(image) {
+
+		$size: 100px;
+		/* $size */ width : $size;
+		/* $size */ height: $size;
+
+		float : right;
+		margin: 0 0 1em 1em;
+
+		@include k19.border-radius(100%);
+		@include k19.transition(
+			transform .3s,
+			box-shadow .3s
+		);
+
+		&:active {
+
+			// Box Shadow
+			@include k19.box-shadow(
+				rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+				rgba(0, 0, 0, 0.05) 0px 4px 6px -2px
+			);
+
+			// Transform
+			@include k19.prefixer(
+				transform,
+				translateY(-3px),
+				ms webkit o moz
+			);
+
+		}
+
+	} // ! Header Image
+
+	// * Header Wrapper
+	@include k19.e(wrapper) {
+		background-color: var(--header_clrBackground);
+	} // ! Header Wrapper
+
+}

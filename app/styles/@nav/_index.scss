@@ -1,0 +1,150 @@
+// * Nav
+@include k19.b(nav) {
+
+	padding: .5em 0;
+
+	// ? Flexbox
+	/*   Flexbox */ @include k19.flexbox();
+	/*   Flexbox */ @include k19.justify-content(space-between);
+	/*   Flexbox */ @include k19.align-items(center);
+
+	// * Nav Wrapper
+	// Нужен для обвертки навигационной панели и сетки Bootstrap
+	// .nav__wrapper > .container > .row > .col-12 > .nav
+	@include k19.e(wrapper) {
+
+		background-color: var(--nav_clrBackground);
+		position        : sticky;
+		position        : -webkit-sticky;
+		top             : 0;
+		z-index         : 1;
+
+		@include k19.transition(
+			box-shadow .3s,
+			background-color .3s,
+			border-bottom .4s
+		);
+
+		// * Nav:Scrolled
+		@include k19.m(scrolled) {
+
+			background-color: var(--nav_clrBackground--scrolled);
+
+			@include k19.box-shadow(var(--nav_sdw));
+
+		} // ! Nav:Scrolled
+
+	} // ! Nav Wrapper
+
+	// * Nav Title
+	@include k19.e(title) {
+
+		@include k19.transition(
+			color .3s
+		);
+
+		margin        : 0;
+		font-size     : $font-size_h6;
+		color         : inherit;
+		text-transform: lowercase;
+
+		&.hidden {
+			color: transparent;
+		}
+
+	} // ! Nav Title
+
+	// * Nav Action
+	@include k19.e(action) {
+
+		$size: 38px;
+		/* $size */ width : $size;
+		/* $size */ height: $size;
+
+		vertical-align : middle;
+		position       : relative;
+		overflow       : hidden;
+		text-decoration: none;
+		border         : none;
+		cursor         : pointer;
+
+		color: var(--clrFont);
+		background: transparent;
+
+		// ? Flexbox
+		/*   Flexbox */ @include k19.flexbox();
+		/*   Flexbox */ @include k19.justify-content(center);
+		/*   Flexbox */ @include k19.align-items(center);
+
+		@include k19.border-radius(100px);
+		@include k19.transition(
+			color .3s,
+			background .3s,
+			opacity .3s
+		);
+
+		&:hover,
+		&:focus {
+			background: var(--nav-action_clrBackground--hover)
+		}
+
+		&::before:hover {
+
+			/* $size */ width   : $size;
+			/* $size */ height  : $size;
+
+			display : block;
+			content : '';
+			position: absolute;
+			top     : 0;
+
+		}
+
+		&:active {
+			@include k19.props-apply((
+				background: nav-action_clrBackground--active,
+				color: nav-action_clrIcon--active,
+			));
+		}
+
+		&:first-child { margin-left : -9px; }
+		&:last-child  { margin-right: -7px; }
+
+		// * Nav Link
+		// a {
+
+		// 	@include k19.transition( color .3s );
+
+		// 	color: inherit;
+		// 	text-decoration: none;
+
+		// 	&::before {
+		// 		content : '';
+		// 		width   : 100%;
+		// 		height  : 100%;
+		// 		position: absolute;
+		// 		top     : 0;
+		// 		left    : 0;
+		// 	}
+
+		// 	&:active {
+		// 		@include k19.props-apply((
+		// 			color: nav-action_clrIcon--active,
+		// 		));
+		// 	}
+
+		// }
+
+		// * Nav Action:Disabled
+		@include k19.m(disabled) {
+
+			pointer-events: none;
+			cursor: not-allowed;
+
+			@include k19.opacity(0.20);
+
+		} // ! Nav Action:Disabled
+
+	} // ! Nav Action
+
+}

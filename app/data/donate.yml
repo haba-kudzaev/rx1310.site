@@ -1,0 +1,15 @@
+# url       : ссылка на ресурс
+# title     : название ресурса, которое также добавляется в аттрибут title
+# iconColor : цвет иконки
+
+# ? Мой Open Collective
+opencollective:
+  url: "https://opencollective.com/rx1310"
+  title: "Open Collective"
+  iconColor: "#7FADF2"
+
+# ? Мой Patreon
+patreon:
+  url: "https://www.patreon.com/rx1310"
+  title: "Patreon"
+  iconColor: "#FF424D"

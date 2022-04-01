@@ -1,0 +1,59 @@
+#
+
+col-1:
+  # ? Kalium19
+  kalium19:
+    link: "https://github.com/91muilak/kalium19"
+    name: "Kalium19"
+    desc: "Набор утилит, миксинов, расширений на языке препроцессора SASS для помощи в ускорении и упрощении написания CSS-стилей."
+    icon: "https://avatars.githubusercontent.com/u/91287868?s=200&v=4"
+
+  # ? A2IGA
+  a2iga:
+    link: "https://github.com/a2iga"
+    name: "A2IGA"
+    desc: "Маленькая утилита, которая поможет заменить Google Assistant, вызываемый зажатием кнопки Home / жестом нижних краёв экрана (Android Q), на любое приложение, нужное вам."
+    icon: "https://avatars.githubusercontent.com/u/84118074?s=200&v=4"
+
+col-2:
+  # ? DevReader
+  devreader:
+    link: "https://github.com/devreader"
+    name: "DevReader"
+    desc: "Простой, удобный, а также мобильный справочник по программированию для начинающих. Проект закрыт."
+    icon: "https://avatars.githubusercontent.com/u/55412158?s=200&v=4"
+
+  # ? Nova X
+  novax:
+    link: "https://4pda.to/forum/index.php?showtopic=297970&st=8260#entry53564635"
+    name: "Nova X"
+    desc: "Модификация популярного лаунчера для Android - Nova Launcher. Проект закрыт и более не обновляется с 2019 года."
+    icon: "https://ds-blobs-2.cdn.devapps.ru/12227947.png"
+
+  # ? OptiNova
+  optinova:
+    link: "https://github.com/optinova?type=source"
+    name: "OptiNova"
+    desc: "Небольшая модификация Nova Launcher от @rx1310, ориентированная на глубокую чистку хлама из пакета и удаление нерабочего и ненужного функционала. Проект в разработке..."
+    icon: "https://avatars.githubusercontent.com/u/82545382?s=200&v=4"
+
+col-3:
+  # ? RebootManager
+  rebootmanager:
+    link: "https://github.com/rx1310/RebootManager"
+    name: "RebootManager"
+    desc: "Простой, лёгкий и удобный менеджер перезагрузки вашего Android-устройства в режим recovery и bootloader."
+    icon: "https://github.com/rx1310/RebootManager/blob/master/app/src/main/web_hi_res_512.png?raw=true"
+
+  # ? ChangeDPI
+  changedpi:
+    link: "https://github.com/rx1310/ChangeDPI"
+    name: "ChangeDPI"
+    desc: "Маленькая утилита для смены DPI на устройстве (required superuser permission)."
+    icon: "https://github.com/rx1310/ChangeDPI/blob/master/app/src/main/web_hi_res_512.png?raw=true"
+
+  # ? VanillaCoreX
+  vanillacorex:
+    link: "https://github.com/rx1310/VanillaCoreX"
+    name: "VanillaCoreX"
+    desc: "Минималистичный, простой, легкий и красивый фреймворк для верстки простых веб-сайтов, написанный с использованием чистого JavaScript и CSS."

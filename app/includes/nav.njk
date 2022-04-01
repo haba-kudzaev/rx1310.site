@@ -1,0 +1,50 @@
+<nav class="nav__wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="nav">
+
+					{% if nav.showBackAction != false %}
+						<button
+							title="Перейти на пред. стр."
+							aria-label="Назад"
+							onclick="history.back()"
+							class="nav__action material-icons">
+							navigate_before
+						</button>
+					{% elif nav.showGoToBlogAction != false %}
+						<button
+							title="Перейти к блогу"
+							aria-label="Блог"
+							onclick="window.open('blog/','_self');"
+							class="nav__action material-icons">
+							notes
+						</button>
+					{% else %}
+						<span class="nav__action" disabled></span>
+					{% endif %}
+
+					<h5 class="nav__title hidden">
+						{% if nav.title == "default" %}
+							{{ page.title }}
+						{% else %}
+							{{ nav.title }}
+						{% endif %}
+					</h5>
+
+					{% if nav.showScrollUpAction != false %}
+						<button
+							title="Перейти к началу стр."
+							aria-label="К началу страницы"
+							onclick="scrollUp()"
+							id="scrollUp"
+							class="nav__action nav__action--disabled material-icons">
+							keyboard_double_arrow_up
+						</button>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>

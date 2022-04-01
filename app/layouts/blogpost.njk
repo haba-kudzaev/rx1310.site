@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+	<head>
+		{% include "_head/meta.njk" %}
+		{% include "_head/link.njk" %}
+		<link rel="stylesheet" href="/css/vendor/prism.css">
+	</head>
+	<body class="img--rounded">
+
+		{% include "nav.njk" %}
+		{% include "header.njk" %}
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12 col-md-8">
+					{{ content | safe }}
+				</div>
+
+				<div class="col-12 col-md-4">
+
+					{% set prevPost = collections.blog | getPreviousCollectionItem(page) %}
+					{% set nextPost = collections.blog | getNextCollectionItem(page) %}
+
+					<ul class="list-posts">
+						<li class="title">Другие посты</li>
+						{% if prevPost %}
+							<li class="post">
+								<a href="{{ prevPost.url }}" class="post__link"></a>
+								<div class="mi">
+									<span class="material-icons">navigate_before</span>
+									<span class="post__title">{{ prevPost.data.header.title }}</span>
+								</div>
+								<p class="post__description">{{ prevPost.data.header.subtitle }}</p>
+							</li>
+						{% endif %}
+						{% if nextPost %}
+							<li class="post">
+								<a href="{{ nextPost.url }}" class="post__link"></a>
+								<div class="mi">
+									<span class="material-icons">navigate_next</span>
+									<span class="post__title">{{ nextPost.data.header.title }}</span>
+								</div>
+								<p class="post__description">{{ nextPost.data.header.subtitle }}</p>
+							</li>
+						{% endif %}
+					</ul>
+				</div>
+
+			</div>
+		</div>
+
+
+		{% include "footer.njk" %}
+		{% include "scripts.njk" %}
+
+	</body>
+</html>

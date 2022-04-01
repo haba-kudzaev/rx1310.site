@@ -1,0 +1,80 @@
+// ! Изменение названия файла (_theme.scss) приведет к ошибке компиляции SASS!
+// ? При изменении названия файла поправьте импорт в mixins/_themer.scss.
+
+$themes: (
+
+	light: (
+
+		clrAccent: #006ad8,
+		clrBackground: #f6f8fa,
+		clrFont: #000,
+		clrDivider: #b8b8b8,
+
+		// * Nav
+		nav_clrBackground: #e8ebefcc,
+		nav_clrBackground--scrolled: #ffffff,
+		nav-action_clrBackground--hover: #c0c3c7,
+		nav-action_clrBackground--active: var(--clrAccent),
+		nav-action_clrIcon--active: #ffffff,
+		nav_sdw: (
+			rgba(60, 64, 67, 0.178) 0px 1px 2px 0px,
+			rgba(60, 64, 67, 0.068) 0px 2px 6px 2px
+		),
+
+		// * Header
+		header_clrBackground: var(--nav_clrBackground),
+
+		// * Footer
+		footer_clrBackground: var(--nav_clrBackground),
+		footer_clrFont: inherit,
+
+		// * Card
+		card_clrBackground: white,
+		card-clickable_clrBackground--hover: #c0c3c7,
+		card-clickable_clrBackground--active: var(--clrAccent),
+		card_sdw: (rgba(0, 0, 0, 0.1) 0px 4px 12px),
+
+		// * Button
+		btn_clrBorder: #c0c3c783,
+		btn_clrBackground--hover: var(--btn_clrBorder),
+		btn_clrBackground--active: var(--clrAccent),
+		btn_clrFont--active: white
+
+	),
+
+	dark: (
+
+		clrAccent: #0071e9,
+		clrBackground: #0a0c10,
+		clrFont: #fff,
+		clrDivider: #525a66,
+
+		// * Nav
+		nav_clrBackground: #0d1117c5,
+		nav_clrBackground--scrolled: #161b22,
+		nav-action_clrBackground--hover: #2d333b,
+		nav-action_clrBackground--active: var(--clrAccent),
+		nav-action_clrIcon--active: #000000,
+		nav_sdw: (rgba(0, 0, 0, 0.16) 0px 1px 4px),
+
+		// * Header
+		header_clrBackground: var(--nav_clrBackground),
+
+		// * Footer
+		footer_clrBackground: #07090c,
+		footer_clrFont: inherit,
+
+		// * Card
+		card_clrBackground: #161b22,
+		card-clickable_clrBackground--hover: #2d333b,
+		card-clickable_clrBackground--active: var(--clrAccent),
+		card_sdw: (rgba(0, 0, 0, 0.301) 0px 4px 12px),
+
+		// * Button
+		btn_clrBorder: #2d333bad,
+		btn_clrBackground--hover: var(--btn_clrBorder),
+		btn_clrBackground--active: var(--clrAccent),
+		btn_clrFont--active: var(--clrBackground)
+	)
+
+);

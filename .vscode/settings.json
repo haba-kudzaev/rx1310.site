@@ -1,73 +1,62 @@
 {
 
-	"git.ignoreLimitWarning": true,
+	"git.ignoreLimitWarning"           : true,
 	"npm-scripts.showStartNotification": false,
 
-	// "files.exclude": {
-	// 	"dist/": false,
-	// 	".github/": true,
-	// 	"node_modules": true,
-	// 	".ecrc": true,
-	// 	".editorconfig": true,
-	// 	".eleventyignore": true,
-	// 	"package-lock.*": true,
-	// 	".gitignore": true
-	// },
+	"files.exclude": {
+		"dist/"          : false,
+		".github/"       : true,
+		"node_modules"   : true,
+		".ecrc"          : true,
+		".editorconfig"  : true,
+		".eleventyignore": true,
+		"package-lock.*" : true,
+		".gitignore"     : true,
+		"LICENSE"        : true
+	},
 
 	// * Better Comments
 	"better-comments.tags": [
 		{
-			"tag": "!",
-			"color": "#FF2D00",
-			"strikethrough": false,
-			"underline": false,
+			"tag"            : "!",
+			"color"          : "#FF2D00",
+			"strikethrough"  : false,
+			"underline"      : false,
 			"backgroundColor": "transparent",
-			"bold": true,
-			"italic": false
+			"bold"           : true,
+			"italic"         : false
 		},{
-			"tag": "?",
-			"color": "#3498DB",
-			"strikethrough": false,
-			"underline": false,
+			"tag"            : "?",
+			"color"          : "#3498DB",
+			"strikethrough"  : false,
+			"underline"      : false,
 			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"bold"           : false,
+			"italic"         : false
 		},{
-			"tag": "//",
-			"color": "#474747",
-			"strikethrough": true,
-			"underline": false,
+			"tag"            : "//",
+			"color"          : "#474747",
+			"strikethrough"  : true,
+			"underline"      : false,
 			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"bold"           : false,
+			"italic"         : false
 		},{
-			"tag": "todo",
-			"color": "#FF8C00",
-			"strikethrough": false,
-			"underline": false,
+			"tag"            : "todo",
+			"color"          : "#FF8C00",
+			"strikethrough"  : false,
+			"underline"      : false,
 			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
+			"bold"           : false,
+			"italic"         : false
 		},{
-			"tag": "*",
-			"color": "#98C379",
-			"strikethrough": false,
-			"underline": false,
+			"tag"            : "*",
+			"color"          : "#98C379",
+			"strikethrough"  : false,
+			"underline"      : false,
 			"backgroundColor": "transparent",
-			"bold": false,
-			"italic": false
-		},{
-			"tag": "/",
-			"color": "#555555"
-		},{
-			"tag": "@element",
-			"color": "#5865f2"
-		},{
-			"tag": "@block",
-			"color": "#109f5b"
-		},{
-			"tag": "@mod",
-			"color": "#009688"
+			"bold"           : false,
+			"italic"         : false
 		}
 	],
 
