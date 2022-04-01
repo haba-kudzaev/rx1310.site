@@ -1,7 +1,13 @@
 layout: blogpost.njk
 date: "Created"
+
+eleventyComputed:
+  page:
+    title: "{{ header.title }}"
+
 tags:
   - blog
+
 nav:
   showScrollUpAction: true
   showBackAction    : true
