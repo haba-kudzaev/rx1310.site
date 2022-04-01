@@ -36,12 +36,11 @@
 				<div class="footer">
 
 					<h5>Связь со мной</h5>
-						<p>Ниже список основным моих соц. сетей, по которым можно связаться со мной или следить за тем, что нового я делаю.</p>
-						<div>
-							{% for id, data in social %}
-								{{ links.link(data.title, data.url, "icons", id, data.iconColor) }}
-							{% endfor %}
-						</div>
+					<p>Ниже список основным моих соц. сетей, по которым можно связаться со мной или следить за тем, что нового я делаю.</p>
+					<div>
+						{% for id, data in social %}
+							{{ links.link(data.title, data.url, "icons", id, data.iconColor) }}
+						{% endfor %}
 					</div>
 
 					<h5>Поддержать</h5>
@@ -51,6 +50,7 @@
 							{{ links.link(data.title, data.url, "icons", id, data.iconColor) }}
 						{% endfor %}
 					</div>
+
 
 					<h5>Лицензии</h5>
 					<p>Мой сайт является проектом с открытым <a href="https://github.com/rx1310/rx1310.github.io" title="Открыть репозиторий на GitHub →">исходным кодом</a>. Сайт находится под защитой лицензии <a href="https://github.com/rx1310/rx1310.github.io/blob/main/LICENSE">Apache-2.0</a>.</p>
