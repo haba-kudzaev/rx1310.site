@@ -1,7 +1,6 @@
 {
   "name": "rx1310.site",
   "version": "1.0.0",
-  "versionType": "pre-alpha",
   "description": "Сайт молодого и начинающего разработчика из России, интересующегося веб-разработкой (front-end), разработкой Android-приложений и Linux.",
   "main": "app/index.njk",
   "scripts": {
