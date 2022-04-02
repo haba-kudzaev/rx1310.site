@@ -13,13 +13,11 @@ page:
 # * showBackAction    : если true, то отобразить кнопку "Назад"
 # * showScrollUpAction: если true, то отобразить кнопку "К началу страницы"
 # * title             : заголовок страницы (если default, то значение берется из header.title)
-# * showGoToBlogAction: отображение кнопки перехода к блогу
 # * showHomeAction    : отображение кнопки для перехода на главную
 nav:
   title             : "default"
   showBackAction    : false
   showScrollUpAction: true
-  showGoToBlogAction: false
 
 # ? Настройка Header
 # * title   : заголовок Header

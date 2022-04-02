@@ -9,7 +9,6 @@ module.exports = function(cnf) {
 	cnf.addDataExtension('yml', contents => yaml.load(contents));
 	cnf.addPassthroughCopy('app/assets');
 	cnf.addPassthroughCopy('app/scripts');
-	cnf.addPassthroughCopy("app/blog/posts/**/*.webp");
 
 	cnf.setUseGitIgnore(true);
 

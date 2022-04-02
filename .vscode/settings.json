@@ -9,7 +9,7 @@
 		"node_modules"   : true,
 		".ecrc"          : true,
 		".editorconfig"  : true,
-		".eleventyignore": true,
+		// ".eleventyignore": true,
 		"package-lock.*" : true,
 		".gitignore"     : true,
 		"LICENSE"        : true
