@@ -2,10 +2,6 @@
 page:
   title: "Главная"
 
-# ? Настройка навигационной панели
-nav:
-  showGoToBlogAction: true
-
 # ? Настройка Header
 header:
   title: "rx1310.site"
