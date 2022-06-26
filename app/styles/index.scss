@@ -10,19 +10,8 @@
 	$border-radius: 12px,
 
 	// настрока миксинов BEM
-	$bem: (
-		element: '__',
-		modifier: '--'
-	),
-
-	// настройка миксина media()
-	$mediaQueries: (
-		null: null,
-		sm: 'screen and (min-width: 576px)',
-		md: 'screen and (min-width: 768px)',
-		lg: 'screen and (min-width: 992px)',
-		xl: 'screen and (min-width: 1200px)',
-	)
+	$bem-element: '__',
+	$bem-modifier: '--'
 
 );
 
@@ -35,4 +24,4 @@
 @import '@footer';
 @import '@card';
 @import '@btn';
-@import '@list';
+// @import '@list';

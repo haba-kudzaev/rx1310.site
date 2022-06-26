@@ -28,9 +28,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 
 	// https://developer.mozilla.org/ru/docs/Web/CSS/user-select
-	@include k19.prefixer-legacy(
+	@include k19.prefixer(
 		user-select,
-		none
+		none,
+		all
 	);
 
 	// https://clck.ru/NNamf

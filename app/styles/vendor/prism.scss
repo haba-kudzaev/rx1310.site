@@ -30,9 +30,10 @@ pre[class*="language-"] {
 	);
 
 	// * User select
-	@include prefixer-legacy(
+	@include prefixer(
 		user-select,
-		text
+		text,
+		all
 	);
 
 	@include prefixer(
@@ -141,9 +142,10 @@ pre[class*="language-"] {
 .token.prefix.unchanged,
 .token.prefix.inserted,
 .token.prefix.deleted {
-	@include prefixer-legacy(
+	@include prefixer(
 		user-select,
-		none
+		none,
+		all
 	);
 }
 

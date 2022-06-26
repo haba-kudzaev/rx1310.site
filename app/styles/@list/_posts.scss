@@ -39,7 +39,7 @@
 		}
 
 		&:last-child {
-			@include k19.border-radius-ext(
+			@include k19.border-radius(
 				0,
 				0,
 				k19.$border-radius,
@@ -48,7 +48,7 @@
 		}
 
 		&:first-child {
-			@include k19.border-radius-ext(
+			@include k19.border-radius(
 				k19.$border-radius,
 				k19.$border-radius,
 				0,

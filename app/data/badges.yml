@@ -39,13 +39,13 @@ visitors:
   alt: "Количество посетителей в репо"
 
 kalium19Ver:
-  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/@rx1310/kalium19/develop?label=kalium19"
+  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/@rx1310/kalium19/main?label=kalium19"
   alt: "Версия Kalium19, используемая в разработке"
 
 eleventyVer:
-  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/@11ty/eleventy/develop?label=11ty"
+  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/@11ty/eleventy/main?label=11ty"
   alt: "Версия Eleventy, используемая в разработке"
 
 sassVer:
-  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/sass/develop?label=sass"
+  src: "https://img.shields.io/github/package-json/dependency-version/rx1310/rx1310.github.io/dev/sass/main?label=sass"
   alt: "Версия SASS, используемая в разработке"
