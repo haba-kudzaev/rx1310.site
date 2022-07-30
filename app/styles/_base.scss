@@ -126,7 +126,7 @@ hr {
 
 .mi {
 
-	@include k19.flexbox();
+	@include k19.flex();
 	@include k19.align-items(center);
 
 	.material-icons {

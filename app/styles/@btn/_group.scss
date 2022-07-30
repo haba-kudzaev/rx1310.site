@@ -4,13 +4,13 @@
 	border  : 2px solid var(--clrAccent);
 	overflow: hidden;
 
-	@include k19.flexbox(inline);
+	@include k19.flex(inline);
 	@include k19.border-radius(14px);
 
 	// * Group:Block
 	@include k19.m(block) {
 
-		@include k19.flexbox();
+		@include k19.flex();
 
 		button {
 			@include k19.flex-grow(1);

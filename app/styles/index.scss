@@ -10,8 +10,10 @@
 	$border-radius: 12px,
 
 	// настрока миксинов BEM
-	$bem-element: '__',
-	$bem-modifier: '--'
+	$bem: (
+		element: '__',
+		modifier: '--'
+	)
 
 );
 

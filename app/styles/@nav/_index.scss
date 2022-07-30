@@ -4,7 +4,7 @@
 	padding: .5em 0;
 
 	// ? Flexbox
-	/*   Flexbox */ @include k19.flexbox();
+	/*   Flexbox */ @include k19.flex();
 	/*   Flexbox */ @include k19.justify-content(space-between);
 	/*   Flexbox */ @include k19.align-items(center);
 
@@ -72,7 +72,7 @@
 		background: transparent;
 
 		// ? Flexbox
-		/*   Flexbox */ @include k19.flexbox();
+		/*   Flexbox */ @include k19.flex();
 		/*   Flexbox */ @include k19.justify-content(center);
 		/*   Flexbox */ @include k19.align-items(center);
 
