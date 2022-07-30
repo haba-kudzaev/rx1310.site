@@ -1,6 +1,5 @@
 {
   "name": "rx1310.site",
-  "version": "1.0.0",
   "description": "Сайт молодого и начинающего разработчика из России, интересующегося веб-разработкой (front-end), разработкой Android-приложений и Linux.",
   "main": "app/index.njk",
   "scripts": {
@@ -32,7 +31,6 @@
     "email": "rx1310@inbox.ru",
     "url": "https://rx1310.site"
   },
-  "license": "Apache-2.0",
   "licenses": [
     {
       "type": "Apache-2.0",

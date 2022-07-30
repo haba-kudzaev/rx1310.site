@@ -3,19 +3,33 @@
 col-1:
   # ? Kalium19
   kalium19:
-    link: "https://github.com/91muilak/kalium19"
+    link: "https://github.com/rx1310/kalium19"
     name: "Kalium19"
     desc: "Набор утилит, миксинов, расширений на языке препроцессора SASS для помощи в ускорении и упрощении написания CSS-стилей."
-    icon: "https://avatars.githubusercontent.com/u/91287868?s=200&v=4"
+    icon: "https://github.com/rx1310/kalium19/blob/main/.github/logo.png?raw=true"
 
-  # ? A2IGA
-  a2iga:
-    link: "https://github.com/a2iga"
-    name: "A2IGA"
-    desc: "Маленькая утилита, которая поможет заменить Google Assistant, вызываемый зажатием кнопки Home / жестом нижних краёв экрана (Android Q), на любое приложение, нужное вам."
-    icon: "https://avatars.githubusercontent.com/u/84118074?s=200&v=4"
+  # ? Grid-v4
+  grid-v4:
+    link: "https://github.com/rx1310/grid-v4"
+    name: "Grid-v4"
+    desc: "Мощная система гибких сеток из Bootstrap 4 для мобильных устройств, для удобной верстки и расположения элементов любых видов и размеров."
+    icon: "https://avatars.githubusercontent.com/u/2918581?s=200&v=4"
+
+  # ? starter
+  starter:
+    link: "https://github.com/rx1310/starter"
+    name: "starter"
+    desc: "Стартовый шаблон для статичного сайта, написанный на 11ty, SASS (+ Kalium19) и Nunjucks."
+    icon: "https://github.com/rx1310/rx1310/raw/%F0%9F%8C%B3/logo.png?raw=true"
 
 col-2:
+  # ? TutLinux
+  tutlinux:
+    link: "https://github.com/xuniltut"
+    name: "TutLinux"
+    desc: "Открытый веб-проект (интернет-ресурс), предоставляющий основную информацию о работе с программным обеспечением в среде систем основанных на ядре Linux.."
+    icon: "https://avatars.githubusercontent.com/u/108356980?s=200&v=4"
+
   # ? DevReader
   devreader:
     link: "https://github.com/devreader"
@@ -37,6 +51,13 @@ col-3:
     name: "RebootManager"
     desc: "Простой, лёгкий и удобный менеджер перезагрузки вашего Android-устройства в режим recovery и bootloader."
     icon: "https://github.com/rx1310/RebootManager/blob/master/app/src/main/web_hi_res_512.png?raw=true"
+
+  # ? A2IGA
+  a2iga:
+    link: "https://github.com/a2iga"
+    name: "A2IGA"
+    desc: "Маленькая утилита, которая поможет заменить Google Assistant, вызываемый зажатием кнопки Home / жестом нижних краёв экрана (Android Q), на любое приложение, нужное вам."
+    icon: "https://avatars.githubusercontent.com/u/84118074?s=200&v=4"
 
   # ? ChangeDPI
   changedpi:
